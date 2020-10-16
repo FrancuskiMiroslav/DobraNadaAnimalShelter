@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dobra Nada - Good Hope</title>
+		<link
+			rel="icon"
+			href="./assets/images/favicon.png"
+			type="image/svg+xml"
+			sizes="16x16"
+		/>
+		<link rel="stylesheet" href="app.css" id="css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__nav" id="nav-container">
+				<div class="header__nav-logo">
+					<a href="#" class="header__nav-logo-link">
+						<img
+							src="./assets/images/logo.png"
+							alt="animal-shelter_logo"
+							class="header__nav-img"
+						/>
+					</a>
+				</div>
+
+				<div class="header__nav-right">
+					<div class="menu-btn" id="menu-btn">
+						<div class="menu-btn__burger"></div>
+					</div>
+
+					<ul class="header__nav-list" id="nav-list">
+						<li class="header__nav-list-item current">
+							<a href="#" class="header__nav-list-link">Naslovna</a>
+						</li>
+						<li class="header__nav-list-item">
+							<a href="#" class="header__nav-list-link">O nama</a>
+						</li>
+						<li class="header__nav-list-item">
+							<a href="#" class="header__nav-list-link">Udomi</a>
+						</li>
+						<li class="header__nav-list-item">
+							<a href="#" class="header__nav-list-link">Doniraj/Volontiraj</a>
+						</li>
+						<li class="header__nav-list-item">
+							<a href="#" class="header__nav-list-link">Kontakt</a>
+						</li>
+					</ul>
+
+					<button class="header__nav-donate-btn button">Donate</button>
+				</div>
+			</nav>
+
+			<section id="carousel-container" class="carousel-container">
+				<div class="carousel">
+					<div class="carousel__btns">
+						<button class="carousel__btn" id="prev">
+							<i class="fas fa-arrow-left"></i> <span>Prev</span>
+						</button>
+						<button class="carousel__btn" id="next">
+							<span>Next</span> <i class="fas fa-arrow-right"></i>
+						</button>
+					</div>
+					<div class="carousel__slide active">
+						<div class="carousel__content">
+							<h3 class="carousel__title">Pera Perčina</h3>
+							<div class="carousel__desc">lorem ipsum dolor</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+
+		<main>
+			<section id="carousel-container" class="carousel-container">
+				<div class="carousel">
+					<div class="carousel__btns">
+						<button class="carousel__btn" id="prev">
+							<i class="fas fa-arrow-left"></i> <span>Prev</span>
+						</button>
+						<button class="carousel__btn" id="next">
+							<span>Next</span> <i class="fas fa-arrow-right"></i>
+						</button>
+					</div>
+					<div class="carousel__slide active">
+						<div class="carousel__content">
+							<h3 class="carousel__title">Pera Perčina</h3>
+							<div class="carousel__desc">lorem ipsum dolor</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="carousel-container" class="carousel-container">
+				<div class="carousel">
+					<div class="carousel__btns">
+						<button class="carousel__btn" id="prev">
+							<i class="fas fa-arrow-left"></i> <span>Prev</span>
+						</button>
+						<button class="carousel__btn" id="next">
+							<span>Next</span> <i class="fas fa-arrow-right"></i>
+						</button>
+					</div>
+					<div class="carousel__slide active">
+						<div class="carousel__content">
+							<h3 class="carousel__title">Pera Perčina</h3>
+							<div class="carousel__desc">lorem ipsum dolor</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="carousel-container" class="carousel-container">
+				<div class="carousel">
+					<div class="carousel__btns">
+						<button class="carousel__btn" id="prev">
+							<i class="fas fa-arrow-left"></i> <span>Prev</span>
+						</button>
+						<button class="carousel__btn" id="next">
+							<span>Next</span> <i class="fas fa-arrow-right"></i>
+						</button>
+					</div>
+					<div class="carousel__slide active">
+						<div class="carousel__content">
+							<h3 class="carousel__title">Pera Perčina</h3>
+							<div class="carousel__desc">lorem ipsum dolor</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				/// css unique timestamp
+				let uniqueNum = new Date().getTime();
+				let cssURL = `app.css?ver=${uniqueNum}`;
+				let cssElement = document.getElementById('css');
+				cssElement.setAttribute('rel', 'stylesheet');
+				cssElement.setAttribute('type', 'text/css');
+				cssElement.setAttribute('href', cssURL);
+			});
+		</script>
+		<script src="app.js"></script>
+	</body>
+</html>

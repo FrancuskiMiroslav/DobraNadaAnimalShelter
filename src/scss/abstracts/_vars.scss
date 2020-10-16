@@ -1,0 +1,24 @@
+$mainFont: 'Lato', sans-serif;
+$secondaryFont: 'robotoregular', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$primaryClr: #37ac85;
+$secondaryClr: #fca15f;
+$tertiaryClr: #8673c7;
+
+$primaryClrDark: #443a69;
+$secondaryClrDark: #69623a;
+$tertiaryClrDark: #694a3a;
+
+$showImage: true;
+$homeImage: url(../images/home-bg-min.jpg);
+$backgroundOpacity: 0.85;
+
+$fwNormal: 400;
+$fwBold: 700;
+
+$min_vw: 320px;
+$max_vw: 2560px;
+$min_font: 12px;
+$max_font: 50px;

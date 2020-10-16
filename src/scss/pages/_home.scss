@@ -1,0 +1,13 @@
+body {
+	color: setTextColor($primaryClr);
+	background-color: $tertiaryClr;
+
+	p,
+	a {
+		@include fluid-typo(375px, 1920px, 10px, 18px);
+	}
+
+	a {
+		color: setTextColor($primaryClr);
+	}
+}
