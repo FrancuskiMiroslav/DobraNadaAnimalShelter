@@ -150,7 +150,7 @@
 		width: 100%;
 		background-color: transparent;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 
 		@include breakpoint-max(800) {
 			opacity: 0;
@@ -242,6 +242,50 @@
 					width: 30%;
 					opacity: 1;
 				}
+			}
+		}
+	}
+
+	&__nav-social-icons {
+		display: none;
+
+		@include breakpoint-max(800) {
+			display: flex;
+		}
+	}
+
+	&__nav-social-icon {
+		line-height: 32px;
+		margin: 0 20px;
+		transition: 0.5s ease-in-out all;
+
+		&:hover {
+			filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
+
+			i {
+				animation: filter-animation 3s infinite;
+			}
+		}
+
+		i {
+			font-size: 32px;
+			transition: 0.5s ease-in-out all;
+		}
+
+		@keyframes filter-animation {
+			0% {
+				filter: sepia(0) saturate(2);
+				font-size: 32px;
+			}
+
+			50% {
+				filter: sepia(3) saturate(36);
+				font-size: 36px;
+			}
+
+			100% {
+				filter: sepia(0) saturate(2);
+				font-size: 32px;
 			}
 		}
 	}
