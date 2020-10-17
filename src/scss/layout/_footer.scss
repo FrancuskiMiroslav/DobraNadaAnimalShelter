@@ -1,0 +1,16 @@
+.footer {
+	background-color: #363d41;
+	padding: 30px;
+
+	&__inner {
+		@include wrapper(1200, 30);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__copyright {
+		width: 100%;
+		text-align: center;
+	}
+}
