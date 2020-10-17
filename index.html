@@ -17,6 +17,9 @@
 		/>
 	</head>
 	<body>
+		<div class="preload">
+			<img src="./assets/images/loading(1).gif" alt="loading-image" />
+		</div>
 		<header class="header">
 			<nav class="header__nav" id="nav-container">
 				<div class="header__nav-logo">
@@ -50,9 +53,27 @@
 						<li class="header__nav-list-item">
 							<a href="#" class="header__nav-list-link">Kontakt</a>
 						</li>
+
+						<ul class="header__nav-social-icons">
+							<li class="header__nav-social-icon">
+								<a href="#" class="header__nav-social-icon-link"
+									><i class="fab fa-facebook-square"></i
+								></a>
+							</li>
+							<li class="header__nav-social-icon">
+								<a href="#" class="header__nav-social-icon-link"
+									><i class="fab fa-instagram-square"></i
+								></a>
+							</li>
+							<li class="header__nav-social-icon">
+								<a href="#" class="header__nav-social-icon-link"
+									><i class="fab fa-skype"></i
+								></a>
+							</li>
+						</ul>
 					</ul>
 
-					<button class="header__nav-donate-btn button">Donate</button>
+					<button class="header__nav-donate-btn button">Doniraj???</button>
 				</div>
 			</nav>
 
@@ -67,9 +88,15 @@
 						</button>
 					</div>
 					<div class="carousel__slide active">
+						<div class="carousel__image-container">
+							<img src="./assets/images/carousel/slide3.jpg" alt="slide-img" />
+						</div>
 						<div class="carousel__content">
-							<h3 class="carousel__title">Pera Perčina</h3>
-							<div class="carousel__desc">lorem ipsum dolor</div>
+							<h1 class="carousel__title">Slide broj jedan naslov</h1>
+							<p class="carousel__desc">slide broj jedan tekst</p>
+							<button class="header__nav-donate-btn button">
+								Dugme za nešto
+							</button>
 						</div>
 					</div>
 				</div>
@@ -88,62 +115,19 @@
 						</button>
 					</div>
 					<div class="carousel__slide active">
-						<div class="carousel__content">
-							<h3 class="carousel__title">Pera Perčina</h3>
-							<div class="carousel__desc">lorem ipsum dolor</div>
+						<div class="carousel__image-container">
+							<img src="./assets/images/carousel/slide1.jpg" alt="slide-img" />
 						</div>
-					</div>
-				</div>
-			</section>
-			<section id="carousel-container" class="carousel-container">
-				<div class="carousel">
-					<div class="carousel__btns">
-						<button class="carousel__btn" id="prev">
-							<i class="fas fa-arrow-left"></i> <span>Prev</span>
-						</button>
-						<button class="carousel__btn" id="next">
-							<span>Next</span> <i class="fas fa-arrow-right"></i>
-						</button>
-					</div>
-					<div class="carousel__slide active">
+
 						<div class="carousel__content">
-							<h3 class="carousel__title">Pera Perčina</h3>
-							<div class="carousel__desc">lorem ipsum dolor</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="carousel-container" class="carousel-container">
-				<div class="carousel">
-					<div class="carousel__btns">
-						<button class="carousel__btn" id="prev">
-							<i class="fas fa-arrow-left"></i> <span>Prev</span>
-						</button>
-						<button class="carousel__btn" id="next">
-							<span>Next</span> <i class="fas fa-arrow-right"></i>
-						</button>
-					</div>
-					<div class="carousel__slide active">
-						<div class="carousel__content">
-							<h3 class="carousel__title">Pera Perčina</h3>
-							<div class="carousel__desc">lorem ipsum dolor</div>
+							<h3 class="carousel__title"></h3>
+							<p class="carousel__desc">lorem ipsum dolor</p>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				/// css unique timestamp
-				let uniqueNum = new Date().getTime();
-				let cssURL = `app.css?ver=${uniqueNum}`;
-				let cssElement = document.getElementById('css');
-				cssElement.setAttribute('rel', 'stylesheet');
-				cssElement.setAttribute('type', 'text/css');
-				cssElement.setAttribute('href', cssURL);
-			});
-		</script>
 		<script src="app.js"></script>
 	</body>
 </html>
