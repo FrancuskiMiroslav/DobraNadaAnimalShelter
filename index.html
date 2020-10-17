@@ -3,6 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="keywords"
+			content="Dobra Nada, Azil, Animal Shelter, Dog, Cat, Good Hope, Pas, Mačka"
+		/>
+		<meta name="author" content="Francuski Miroslav" />
+		<meta name="description" content="Animal Shelter" />
 		<title>Dobra Nada - Good Hope</title>
 		<link
 			rel="icon"
@@ -10,7 +16,7 @@
 			type="image/svg+xml"
 			sizes="16x16"
 		/>
-		<link rel="stylesheet" href="app.css" id="css" />
+		<link rel="stylesheet" href="app.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -20,6 +26,10 @@
 		<div class="preload">
 			<img src="./assets/images/loading(1).gif" alt="loading-image" />
 		</div>
+
+		<button class="button scrollTopBtn" id="btnScrollToTop">
+			<i class="fas fa-arrow-alt-circle-up"></i>
+		</button>
 		<header class="header">
 			<nav class="header__nav" id="nav-container">
 				<div class="header__nav-logo">
@@ -78,55 +88,116 @@
 			</nav>
 
 			<section id="carousel-container" class="carousel-container">
-				<div class="carousel">
+				<div class="carousel" id="carousel">
 					<div class="carousel__btns">
 						<button class="carousel__btn" id="prev">
-							<i class="fas fa-arrow-left"></i> <span>Prev</span>
+							<i class="fas fa-arrow-left"></i> <span>Prethodni</span>
 						</button>
 						<button class="carousel__btn" id="next">
-							<span>Next</span> <i class="fas fa-arrow-right"></i>
+							<span>Sledeći</span> <i class="fas fa-arrow-right"></i>
 						</button>
-					</div>
-					<div class="carousel__slide active">
-						<div class="carousel__image-container">
-							<img src="./assets/images/carousel/slide3.jpg" alt="slide-img" />
-						</div>
-						<div class="carousel__content">
-							<h1 class="carousel__title">Slide broj jedan naslov</h1>
-							<p class="carousel__desc">slide broj jedan tekst</p>
-							<button class="header__nav-donate-btn button">
-								Dugme za nešto
-							</button>
-						</div>
 					</div>
 				</div>
 			</section>
 		</header>
 
 		<main>
-			<section id="carousel-container" class="carousel-container">
-				<div class="carousel">
-					<div class="carousel__btns">
-						<button class="carousel__btn" id="prev">
-							<i class="fas fa-arrow-left"></i> <span>Prev</span>
-						</button>
-						<button class="carousel__btn" id="next">
-							<span>Next</span> <i class="fas fa-arrow-right"></i>
-						</button>
-					</div>
-					<div class="carousel__slide active">
-						<div class="carousel__image-container">
-							<img src="./assets/images/carousel/slide1.jpg" alt="slide-img" />
-						</div>
-
-						<div class="carousel__content">
-							<h3 class="carousel__title"></h3>
-							<p class="carousel__desc">lorem ipsum dolor</p>
-						</div>
-					</div>
+			<div class="carousel__slide">
+				<div class="carousel__image-container">
+					<img src="./assets/images/carousel/slide3.jpg" alt="slide-img" />
 				</div>
-			</section>
+				<div class="carousel__content">
+					<h1 class="carousel__title">Slide broj jedan naslov</h1>
+					<p class="carousel__desc">slide broj jedan tekst</p>
+					<button class="header__nav-donate-btn button">Dugme za nešto</button>
+				</div>
+			</div>
+			<div class="carousel__slide">
+				<div class="carousel__image-container">
+					<img src="./assets/images/carousel/slide3.jpg" alt="slide-img" />
+				</div>
+				<div class="carousel__content">
+					<h1 class="carousel__title">Slide broj jedan naslov</h1>
+					<p class="carousel__desc">slide broj jedan tekst</p>
+					<button class="header__nav-donate-btn button">Dugme za nešto</button>
+				</div>
+			</div>
 		</main>
+
+		<footer class="footer">
+			<div class="footer__inner">
+				<div class="footer__nav-links">
+					<h3 class="footer__nav-title">Linkovi</h3>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link">Home</a>
+						</li>
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link">About</a>
+						</li>
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link">Home</a>
+						</li>
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link">Home</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__sponsors">
+					<h3 class="footer__nav-title">Sponzori</h3>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link">Sponzor1</a>
+						</li>
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link">Sponzor2</a>
+						</li>
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link">Sponzor3</a>
+						</li>
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link">Sponzor4</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__social-links">
+					<h3 class="footer__nav-title">Društvene mreže</h3>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link"
+								><i class="fab fa-facebook-square"></i
+							></a>
+						</li>
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link"
+								><i class="fab fa-instagram-square"></i
+							></a>
+						</li>
+						<li class="footer__nav-list-item">
+							<a href="#" class="footer__nav-list-link"
+								><i class="fab fa-skype"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__copyright">
+					<a href="#" class="footer__copyright-link">
+						<img
+							src="./assets/images/logo.pg"
+							alt="logo Dobra Nada"
+							class="footer__copyright-img"
+						/>
+					</a>
+
+					<p class="footer__copyright-text">
+						Dobra Nada - Good Hope &copy; 2020.
+					</p>
+				</div>
+			</div>
+		</footer>
 
 		<script src="app.js"></script>
 	</body>
