@@ -7,6 +7,10 @@ body {
 		@include fluid-typo(375px, 1920px, 10px, 18px);
 	}
 
+	h1 {
+		@include fluid-typo(375px, 1920px, 14px, 42px);
+	}
+
 	a {
 		color: setTextColor($primaryClr);
 	}

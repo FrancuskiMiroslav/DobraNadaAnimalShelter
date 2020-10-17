@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+	window.addEventListener('load', (e) => {
+		const preload = document.querySelector('.preload');
+
+		preload.classList.add('preload-finished');
+	});
+
 	const navContainer = document.getElementById('nav-container');
 	const menuBtn = document.getElementById('menu-btn');
 	const navList = document.getElementById('nav-list');
