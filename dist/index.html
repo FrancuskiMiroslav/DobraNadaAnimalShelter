@@ -20,6 +20,10 @@
 		<div class="preload">
 			<img src="./assets/images/loading(1).gif" alt="loading-image" />
 		</div>
+
+		<button class="button scrollTopBtn" id="btnScrollToTop">
+			<i class="fas fa-arrow-alt-circle-up"></i>
+		</button>
 		<header class="header">
 			<nav class="header__nav" id="nav-container">
 				<div class="header__nav-logo">
@@ -78,7 +82,7 @@
 			</nav>
 
 			<section id="carousel-container" class="carousel-container">
-				<div class="carousel">
+				<div class="carousel" id="carousel">
 					<div class="carousel__btns">
 						<button class="carousel__btn" id="prev">
 							<i class="fas fa-arrow-left"></i> <span>Prev</span>
@@ -86,46 +90,32 @@
 						<button class="carousel__btn" id="next">
 							<span>Next</span> <i class="fas fa-arrow-right"></i>
 						</button>
-					</div>
-					<div class="carousel__slide active">
-						<div class="carousel__image-container">
-							<img src="./assets/images/carousel/slide3.jpg" alt="slide-img" />
-						</div>
-						<div class="carousel__content">
-							<h1 class="carousel__title">Slide broj jedan naslov</h1>
-							<p class="carousel__desc">slide broj jedan tekst</p>
-							<button class="header__nav-donate-btn button">
-								Dugme za nešto
-							</button>
-						</div>
 					</div>
 				</div>
 			</section>
 		</header>
 
 		<main>
-			<section id="carousel-container" class="carousel-container">
-				<div class="carousel">
-					<div class="carousel__btns">
-						<button class="carousel__btn" id="prev">
-							<i class="fas fa-arrow-left"></i> <span>Prev</span>
-						</button>
-						<button class="carousel__btn" id="next">
-							<span>Next</span> <i class="fas fa-arrow-right"></i>
-						</button>
-					</div>
-					<div class="carousel__slide active">
-						<div class="carousel__image-container">
-							<img src="./assets/images/carousel/slide1.jpg" alt="slide-img" />
-						</div>
-
-						<div class="carousel__content">
-							<h3 class="carousel__title"></h3>
-							<p class="carousel__desc">lorem ipsum dolor</p>
-						</div>
-					</div>
+			<div class="carousel__slide">
+				<div class="carousel__image-container">
+					<img src="./assets/images/carousel/slide3.jpg" alt="slide-img" />
 				</div>
-			</section>
+				<div class="carousel__content">
+					<h1 class="carousel__title">Slide broj jedan naslov</h1>
+					<p class="carousel__desc">slide broj jedan tekst</p>
+					<button class="header__nav-donate-btn button">Dugme za nešto</button>
+				</div>
+			</div>
+			<div class="carousel__slide">
+				<div class="carousel__image-container">
+					<img src="./assets/images/carousel/slide3.jpg" alt="slide-img" />
+				</div>
+				<div class="carousel__content">
+					<h1 class="carousel__title">Slide broj jedan naslov</h1>
+					<p class="carousel__desc">slide broj jedan tekst</p>
+					<button class="header__nav-donate-btn button">Dugme za nešto</button>
+				</div>
+			</div>
 		</main>
 
 		<script src="app.js"></script>

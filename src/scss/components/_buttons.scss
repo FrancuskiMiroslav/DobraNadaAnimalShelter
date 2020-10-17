@@ -50,3 +50,16 @@
 		}
 	}
 }
+
+.scrollTopBtn {
+	position: fixed;
+	font-size: 18px;
+	height: 30px;
+	width: 30px;
+	padding: 0;
+	right: 0px;
+	bottom: 10px;
+	z-index: 5000;
+	opacity: 0;
+	transition: 0.5s ease all;
+}
