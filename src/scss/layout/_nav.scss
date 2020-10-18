@@ -50,15 +50,6 @@
 		max-height: 80px;
 		max-width: 100%;
 		padding: 0;
-
-		&__right {
-			width: 100%;
-
-			&::before {
-				width: 100%;
-				background-color: rgba($color: $primaryClr, $alpha: 1);
-			}
-		}
 	}
 
 	&.sticky {
@@ -138,6 +129,12 @@
 
 		@include breakpoint-max(800) {
 			justify-content: space-between;
+			width: 100%;
+
+			&::before {
+				width: 100%;
+				background-color: rgba($color: $primaryClr, $alpha: 1);
+			}
 		}
 	}
 

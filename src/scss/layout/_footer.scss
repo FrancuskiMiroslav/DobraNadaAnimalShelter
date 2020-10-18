@@ -24,6 +24,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		@include breakpoint-max(600) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__nav-list-item {
