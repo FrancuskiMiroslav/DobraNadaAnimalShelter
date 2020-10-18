@@ -7,7 +7,11 @@ body {
 	}
 
 	h1 {
-		@include fluid-typo(375px, 1920px, 14px, 42px);
+		@include fluid-typo(375px, 1920px, 18px, 60px);
+	}
+
+	h3 {
+		@include fluid-typo(375px, 1920px, 12px, 32px);
 	}
 
 	a {

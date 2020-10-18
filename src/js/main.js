@@ -126,7 +126,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
-	(function () {
-		displayCarousel();
-	})();
+	if (carousel !== null) {
+		(function () {
+			displayCarousel();
+		})();
+	}
 });
