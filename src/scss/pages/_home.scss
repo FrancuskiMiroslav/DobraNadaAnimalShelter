@@ -10,11 +10,126 @@ body {
 		@include fluid-typo(375px, 1920px, 18px, 60px);
 	}
 
+	h2 {
+		@include fluid-typo(375px, 1920px, 18px, 48px);
+	}
+
 	h3 {
 		@include fluid-typo(375px, 1920px, 12px, 32px);
 	}
 
 	a {
 		color: setTextColor($primaryClr);
+	}
+}
+
+.home-main {
+	background-color: rgba($color: $bgClr, $alpha: 0.25);
+	.boxes {
+		&__inner-wrap {
+			@include wrapper(1200, 30);
+			padding: 50px 30px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-gap: 40px;
+		}
+
+		&__box {
+			display: flex;
+			flex-direction: column;
+			box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.6);
+			max-width: 500px;
+
+			img {
+				display: block;
+				object-fit: cover;
+			}
+		}
+
+		&__box-top {
+			max-height: 500px;
+		}
+
+		&__box-bottom {
+			display: flex;
+			padding: 30px;
+			justify-content: space-between;
+			align-items: center;
+			background-color: rgba($color: $bgClr, $alpha: 1);
+			flex-wrap: wrap;
+			position: relative;
+			overflow: hidden;
+
+			@include breakpoint-max(800) {
+				flex-direction: column;
+				padding: 0;
+			}
+		}
+
+		&__box-bottom-left {
+			display: flex;
+			align-items: baseline;
+			z-index: 200;
+			@include breakpoint-max(800) {
+				padding: 20px;
+			}
+		}
+
+		&__box-title {
+			text-transform: uppercase;
+			font-weight: 900;
+			margin-right: 20px;
+		}
+
+		&__box-text {
+			font-style: italic;
+		}
+
+		.number {
+			@include fluid-typo(375px, 1920px, 12px, 32px);
+		}
+
+		.animal {
+			@include fluid-typo(375px, 1920px, 12px, 24px);
+		}
+
+		&__box-bottom-right {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 40%;
+			text-align: right;
+			transition: 0.4s ease-in-out all;
+			@include fluid-typo(375px, 1920px, 8px, 18px);
+			border-radius: 0;
+			clip-path: polygon(55px 0, 100% 0, 100% 100%, 0 100%);
+
+			@include breakpoint-max(800) {
+				position: relative;
+				width: 100%;
+				text-align: center;
+				padding: 15px;
+			}
+
+			&::before {
+				content: '';
+				transition: background-color 0.2s ease;
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				left: 0;
+				clip-path: polygon(55px 0, 100% 0, 100% 100%, 0 100%);
+			}
+
+			&:hover {
+				width: 120%;
+				clip-path: polygon(55px 0, 100% 0, 100% 100%, 0 100%);
+				@include breakpoint-max(800) {
+					width: 80%;
+					clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+				}
+			}
+		}
 	}
 }
