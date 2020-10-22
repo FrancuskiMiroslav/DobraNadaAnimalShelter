@@ -163,4 +163,30 @@ document.addEventListener('DOMContentLoaded', function () {
 			tab.querySelector('.tabccordion__list .tabccordion__btn').click();
 		});
 	}
+
+	///// accordion
+	const accordionBtn = document.querySelectorAll('.accordion__list-btn');
+
+	accordionBtn.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			// check for open accordion
+			const accordionBtnOpen = document.querySelector(
+				'.accordion__list-btn.open'
+			);
+			if (accordionBtnOpen && accordionBtnOpen !== btn) {
+				// if there is open then remove open class and set maxheight to 0
+				accordionBtnOpen.classList.toggle('open');
+				accordionBtnOpen.nextElementSibling.style.maxHeight = 0;
+			}
+
+			// set open class to every clicked accordion btn
+			btn.classList.toggle('open');
+			const accordionBody = btn.nextElementSibling;
+			if (btn.classList.contains('open')) {
+				accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
+			} else {
+				accordionBody.style.maxHeight = 0;
+			}
+		});
+	});
 });
