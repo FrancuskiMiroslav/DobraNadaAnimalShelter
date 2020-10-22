@@ -169,6 +169,7 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		position: relative;
+		cursor: pointer;
 
 		@include breakpoint-max(800) {
 			margin-right: 0;

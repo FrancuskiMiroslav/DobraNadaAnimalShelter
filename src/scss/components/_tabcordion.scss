@@ -1,0 +1,258 @@
+.tabccordion {
+	min-height: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff;
+	color: rgba($color: $bgClr, $alpha: 0.7);
+	position: relative;
+	max-width: 1900px;
+	margin: 0 auto;
+	@include breakpoint-max(800) {
+		flex-direction: column;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&:before {
+		position: absolute;
+		content: '';
+		right: 0;
+		width: 60%;
+		height: 100%;
+		background-color: #ffffff;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+	}
+
+	&__img-container {
+		height: 100%;
+		max-height: 700px;
+		align-self: center;
+		overflow: hidden;
+
+		@include breakpoint-max(800) {
+			max-height: 300px;
+		}
+	}
+
+	&__img {
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+
+		@include breakpoint-max(800) {
+			object-fit: contain;
+			object-position: top;
+			height: auto;
+		}
+	}
+
+	&__container {
+		padding: 50px 50px 50px 0;
+		max-width: 50%;
+		height: 100%;
+		z-index: 50;
+		position: relative;
+
+		@include breakpoint-max(800) {
+			max-width: 100%;
+			padding: 50px 30px;
+
+			&:after {
+				position: absolute;
+				content: '';
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 113%;
+				z-index: -1;
+				background-color: #ffffff;
+				clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
+			}
+		}
+	}
+
+	&__body {
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-bottom: 15px;
+	}
+
+	&__list {
+		display: flex;
+		margin-bottom: 40px;
+
+		@include breakpoint-max(600) {
+			display: none;
+		}
+	}
+
+	&__list-btn {
+		cursor: pointer;
+		transition: 0.5s ease-in-out all;
+		position: relative;
+		margin-right: 20px;
+
+		button {
+			transition: 0.5s ease-in-out all;
+		}
+
+		&:before {
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			content: '';
+			border-bottom: 2px solid $secondaryClr;
+			width: 0%;
+			height: 3px;
+			opacity: 0;
+			transition: 0.3s all ease-in-out;
+		}
+
+		&:hover {
+			button {
+				color: $tertiaryClr;
+
+				&::after {
+					color: $tertiaryClr;
+					transform: rotate(180deg);
+				}
+			}
+			&::before {
+				width: 100%;
+				opacity: 1;
+			}
+		}
+
+		&:active {
+			&:before {
+				position: absolute;
+				bottom: -10px;
+				left: 50%;
+				transform: translateX(-50%);
+				content: '';
+				border-bottom: 2px solid $tertiaryClr;
+				width: 30%;
+				height: 3px;
+				transition: 0.3s all ease-in-out;
+			}
+		}
+
+		&.current {
+			pointer-events: none;
+
+			button {
+				color: $tertiaryClr;
+			}
+			&::before {
+				width: 80%;
+				opacity: 1;
+			}
+
+			&:hover {
+				button {
+					color: #ffffff;
+				}
+
+				&::before {
+					width: 30%;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		outline: none;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		@include fluid-typo(375px, 1920px, 12px, 22px);
+		text-transform: uppercase;
+		font-weight: 700;
+		color: rgba($color: $bgClr, $alpha: 1);
+	}
+
+	&__tab {
+		overflow: hidden;
+	}
+
+	&__tab-inner {
+		@include breakpoint-max(600) {
+			max-height: 0;
+			min-height: 0;
+		}
+	}
+}
+
+.accordion__list-btn {
+	display: none;
+	cursor: pointer;
+	transition: 0.5s ease-in-out all;
+
+	@include breakpoint-max(600) {
+		display: block;
+		background-color: $primaryClr;
+		position: relative;
+		padding: 10px;
+
+		& .tabccordion__btn {
+			color: #ffffff;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $secondaryClr;
+			color: $primaryClr;
+
+			&::before,
+			&::after,
+			&.open {
+				background: rgba($color: $primaryClr, $alpha: 0.6);
+			}
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 18px;
+			right: 0;
+			top: 50%;
+			height: 3px;
+			background: rgba($color: $secondaryClr, $alpha: 1);
+			transition: all 0.5s ease-in-out;
+		}
+
+		&::before {
+			transform: rotate(45deg) translate(-10px, 10px);
+		}
+
+		&::after {
+			transform: rotate(130deg) translate(2px, 3px);
+		}
+
+		&.open::before {
+			transform: rotate(220deg) translate(2px, -2px);
+			background: $primaryClr;
+		}
+		&.open::after {
+			transform: rotate(-45deg) translate(-10px, -10px);
+			background: $primaryClr;
+		}
+
+		&.open {
+			background-color: $secondaryClr;
+			color: $primaryClr;
+			box-shadow: inset 0 0 10px $bgClr;
+		}
+	}
+}
