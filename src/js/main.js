@@ -131,4 +131,36 @@ document.addEventListener('DOMContentLoaded', function () {
 			displayCarousel();
 		})();
 	}
+
+	// tabs
+	const tabListBtn = document.querySelectorAll('.tabccordion__list-btn');
+	const tabs = document.querySelectorAll('.tabccordion__container');
+
+	tabListBtn.forEach((tab) => {
+		tab.addEventListener('click', (e) => {
+			const tabNav = tab.parentElement;
+			const tabsContainer = tabNav.parentElement.parentElement;
+			const tabNumber = tab.dataset.forTab;
+			const tabToActivate = tabsContainer.querySelector(
+				`.tabccordion__tab[data-tab="${tabNumber}"]`
+			);
+
+			tabNav.querySelectorAll('.tabccordion__list-btn').forEach((btn) => {
+				btn.classList.remove('current');
+			});
+
+			tabsContainer.querySelectorAll('.tabccordion__tab').forEach((tab) => {
+				tab.classList.remove('current');
+			});
+
+			tab.classList.add('current');
+			tabToActivate.classList.add('current');
+		});
+	});
+
+	if (tabs) {
+		tabs.forEach((tab) => {
+			tab.querySelector('.tabccordion__list .tabccordion__btn').click();
+		});
+	}
 });
