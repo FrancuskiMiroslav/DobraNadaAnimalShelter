@@ -49,7 +49,6 @@
 		top: 0;
 		max-height: 80px;
 		max-width: 100%;
-		padding: 0;
 	}
 
 	&.sticky {
@@ -79,6 +78,7 @@
 
 		.nav__list.show {
 			padding-left: 0px;
+			transform: translateY(20px);
 		}
 	}
 
@@ -134,6 +134,7 @@
 		@include breakpoint-max(800) {
 			justify-content: space-between;
 			width: 100%;
+			flex-direction: row-reverse;
 
 			&::before {
 				width: 100%;
@@ -143,12 +144,13 @@
 	}
 
 	&__list {
-		width: 66%;
+		width: 65%;
 		background-color: transparent;
 		display: flex;
 		flex-wrap: wrap;
 		margin-left: auto;
 		margin-right: auto;
+		justify-content: space-around;
 
 		@include breakpoint-max(800) {
 			width: 100%;
@@ -162,19 +164,18 @@
 			position: absolute;
 			transition: 0.4s ease-in-out all;
 			top: 100px;
-			padding-left: 30px;
+			padding-left: 60px;
 
 			&.show {
 				opacity: 1;
-				transform: translateY(0);
+				transform: translateY(0px);
 				width: 100vw;
 			}
 		}
 	}
 
 	&__list-item {
-		margin-left: 20px;
-		margin-right: auto;
+		margin-left: 5%;
 		text-transform: uppercase;
 		font-weight: 700;
 		position: relative;
@@ -183,6 +184,7 @@
 
 		@include breakpoint-max(800) {
 			margin-right: 0;
+			margin-left: 0px;
 			margin-bottom: 20px;
 		}
 
@@ -276,6 +278,12 @@
 			}
 		}
 	}
+
+	&__donate-btn {
+		@include breakpoint-max(800) {
+			margin-left: auto;
+		}
+	}
 }
 
 .menu-btn {
@@ -304,8 +312,7 @@
 
 	@include breakpoint-max(800) {
 		display: flex;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 20px;
 
 		&.clicked {
 			transition: 0.5s all ease-in-out;
