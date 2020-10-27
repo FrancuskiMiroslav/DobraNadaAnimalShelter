@@ -49,6 +49,7 @@
 		top: 0;
 		max-height: 80px;
 		max-width: 100%;
+		padding: 0;
 	}
 
 	&.sticky {
@@ -137,7 +138,7 @@
 			flex-direction: row-reverse;
 
 			&::before {
-				width: 100%;
+				width: 105%;
 				background-color: rgba($color: $primaryClr, $alpha: 1);
 			}
 		}
@@ -164,7 +165,6 @@
 			position: absolute;
 			transition: 0.4s ease-in-out all;
 			top: 100px;
-			padding-left: 60px;
 
 			&.show {
 				opacity: 1;
@@ -175,7 +175,7 @@
 	}
 
 	&__list-item {
-		margin-left: 5%;
+		margin-left: 20px;
 		text-transform: uppercase;
 		font-weight: 700;
 		position: relative;
@@ -282,6 +282,7 @@
 	&__donate-btn {
 		@include breakpoint-max(800) {
 			margin-left: auto;
+			padding: 8px 15px;
 		}
 	}
 }

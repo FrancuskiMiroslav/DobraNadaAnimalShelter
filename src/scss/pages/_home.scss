@@ -3,15 +3,17 @@ body {
 
 	p,
 	a {
-		@include fluid-typo(375px, 1920px, 12px, 18px);
+		@include fluid-typo(375px, 1920px, 14px, 18px);
 	}
 
 	h1 {
-		@include fluid-typo(375px, 1920px, 18px, 60px);
+		@include fluid-typo(375px, 1920px, 24px, 60px);
 	}
 
 	h2 {
 		@include fluid-typo(375px, 1920px, 18px, 48px);
+		text-transform: uppercase;
+		font-weight: 900;
 	}
 
 	h3 {
