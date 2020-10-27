@@ -9,6 +9,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	text-align: center;
+
+	&__footer {
+		background-image: url(./assets/images/hero2.jpg);
+		background-position: top;
+	}
 
 	&:before {
 		content: '';
@@ -26,12 +33,18 @@
 		align-items: center;
 		z-index: 50;
 		margin-top: 50px;
+		@include wrapper(1200, 30);
 	}
 
 	&__title {
 		text-transform: uppercase;
 		font-weight: 900;
 		margin-bottom: 10px;
+	}
+
+	&__desc {
+		max-width: 600px;
+		margin-bottom: 20px;
 	}
 
 	.breadcrumb {

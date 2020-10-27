@@ -4,6 +4,7 @@
 	.info {
 		display: flex;
 		justify-content: space-between;
+		background-color: #ffffff;
 
 		@include breakpoint-max(600) {
 			flex-direction: column;
@@ -87,6 +88,7 @@
 		&__text {
 			color: rgba($color: $bgClr, $alpha: 0.5);
 			margin-bottom: 30px;
+			padding: 0px 30px;
 		}
 
 		&__container {
@@ -99,11 +101,25 @@
 				&::after {
 					background-color: $primaryClr;
 				}
+
+				.card__bottom {
+					border-top: 2px solid $primaryClr;
+					&:before {
+						border-bottom: 20px solid $primaryClr;
+					}
+				}
 			}
 
 			& div:nth-child(3n + 2) {
 				&::after {
 					background-color: $secondaryClr;
+				}
+
+				.card__bottom {
+					border-top: 2px solid $secondaryClr;
+					&:before {
+						border-bottom: 20px solid $secondaryClr;
+					}
 				}
 			}
 
@@ -111,12 +127,26 @@
 				&::after {
 					background-color: $tertiaryClr;
 				}
+
+				.card__bottom {
+					border-top: 2px solid $tertiaryClr;
+					&:before {
+						border-bottom: 20px solid $tertiaryClr;
+					}
+				}
 			}
 		}
 
 		.card {
 			background-color: #ffffff;
 			position: relative;
+			transition: 0.5s all ease-in-out;
+
+			&:hover {
+				cursor: pointer;
+				transform: scale(1.08);
+				box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.6);
+			}
 
 			&::after {
 				transition: background-color 0.2s ease;
@@ -131,6 +161,19 @@
 			&__bottom {
 				padding: 30px;
 				text-align: left;
+				position: relative;
+
+				&:before {
+					position: absolute;
+					content: '';
+					top: -22px;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 0;
+					height: 0;
+					border-left: 15px solid transparent;
+					border-right: 15px solid transparent;
+				}
 			}
 
 			&__title {
