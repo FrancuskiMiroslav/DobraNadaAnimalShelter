@@ -63,7 +63,7 @@
 							>
 						</li>
 						<li class="nav__list-item current">
-							<a href="#" class="header__nav-list-link">Kontakt</a>
+							<a href="contact.html" class="header__nav-list-link">Kontakt</a>
 						</li>
 
 						<ul class="nav__social-icons">
@@ -85,57 +85,27 @@
 						</ul>
 					</ul>
 
-					<button class="nav__donate-btn button">Doniraj???</button>
+					<button class="nav__donate-btn button">Doniraj</button>
 				</div>
 			</nav>
 
 			<section class="hero">
 				<div class="hero__inner">
-					<h1 class="hero__title">Kontakt</h1>
+					<h1 class="hero__title">Poslato</h1>
 					<ul class="breadcrumb">
 						<li class="nav__list-item"><a href="index.html">Naslovna</a></li>
-						<li class="nav__list-item current"><a href="#">Kontakt</a></li>
+						<li class="nav__list-item"><a href="contact.html">Kontakt</a></li>
+						<li class="nav__list-item current">
+							<a href="#">Uspešno poslato</a>
+						</li>
 					</ul>
+
+					<h2 class="hero__message">Uspešno ste poslali poruku</h2>
 				</div>
 			</section>
 		</header>
 
-		<main class="contact">
-			<form
-				action="/pages/success"
-				class="form"
-				name="contact"
-				method="POST"
-				data-netlify="true"
-				netlify-honeypot="bot-field"
-			>
-				<p class="hidden">
-					<label>
-						Don’t fill this out if you're human: <input name="bot-field" />
-					</label>
-				</p>
-				<input
-					name="name"
-					type="text"
-					class="form__name input"
-					placeholder="Name"
-				/>
-				<input
-					name="email"
-					type="email"
-					class="form__email input"
-					placeholder="Email"
-				/>
-				<textarea
-					rows="3"
-					name="message"
-					class="form__message textarea"
-					placeholder="Vaš komentar"
-				></textarea>
-				<div class="netlify-recaptcha" data-netlify-recaptcha="true"></div>
-				<button type="submit" class="button">Pošalji</button>
-			</form>
-		</main>
+		<main class="success"></main>
 
 		<footer class="footer">
 			<nav class="footer__nav">

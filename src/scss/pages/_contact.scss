@@ -1,0 +1,42 @@
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba($color: $bgClr, $alpha: 0.25);
+	padding: 50px 30px;
+
+	.hidden {
+		height: 0;
+		visibility: hidden;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+
+		.input,
+		.textarea {
+			background-color: transparent;
+			outline: none;
+			border: 1px solid $bgClr;
+			margin-bottom: 20px;
+			padding: 10px;
+			font-family: $mainFont;
+
+			&::placeholder {
+				font-style: italic;
+				font-weight: 900;
+			}
+
+			&:active,
+			&:focus {
+				background-color: $bgClr;
+				color: #ffffff;
+
+				&::placeholder {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}

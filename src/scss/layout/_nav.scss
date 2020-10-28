@@ -220,7 +220,8 @@
 			}
 		}
 
-		&:active {
+		&:active,
+		& :focus {
 			&:before {
 				position: absolute;
 				bottom: -10px;
@@ -232,6 +233,12 @@
 				height: 3px;
 				transition: 0.3s all ease-in-out;
 			}
+		}
+
+		& :focus {
+			text-transform: capitalize;
+			outline: none;
+			color: $secondaryClr;
 		}
 	}
 

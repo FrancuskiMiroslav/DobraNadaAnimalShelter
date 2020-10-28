@@ -23,6 +23,9 @@ body {
 	a {
 		color: setTextColor($primaryClr);
 	}
+
+	display: flex;
+	flex-direction: column;
 }
 
 .home-main {

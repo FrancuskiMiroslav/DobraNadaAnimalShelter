@@ -43,7 +43,8 @@
 		}
 	}
 
-	&:active {
+	&:active,
+	&:focus {
 		background-color: darken($tertiaryClr, 5%);
 		&::after {
 			opacity: 0.32;

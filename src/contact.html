@@ -100,7 +100,42 @@
 			</section>
 		</header>
 
-		<main></main>
+		<main class="contact">
+			<form
+				action="/pages/success"
+				class="form"
+				name="contact"
+				method="POST"
+				data-netlify="true"
+				netlify-honeypot="bot-field"
+			>
+				<p class="hidden">
+					<label>
+						Don’t fill this out if you're human: <input name="bot-field" />
+					</label>
+				</p>
+				<input
+					name="name"
+					type="text"
+					class="form__name input"
+					placeholder="Name"
+				/>
+				<input
+					name="email"
+					type="email"
+					class="form__email input"
+					placeholder="Email"
+				/>
+				<textarea
+					rows="3"
+					name="message"
+					class="form__message textarea"
+					placeholder="Vaš komentar"
+				></textarea>
+				<div class="netlify-recaptcha" data-netlify-recaptcha="true"></div>
+				<button type="submit" class="button">Pošalji</button>
+			</form>
+		</main>
 
 		<footer class="footer">
 			<nav class="footer__nav">
