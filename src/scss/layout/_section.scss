@@ -35,6 +35,7 @@
 		z-index: 50;
 		margin-top: 50px;
 		@include wrapper(1200, 30);
+		padding-top: 20px;
 	}
 
 	&__title {
@@ -46,6 +47,16 @@
 	&__desc {
 		max-width: 600px;
 		margin-bottom: 20px;
+	}
+
+	&__message {
+		padding: 10px;
+	}
+
+	&__thank {
+		margin-top: 10px;
+		display: block;
+		color: $primaryClr;
 	}
 
 	.breadcrumb {

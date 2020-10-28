@@ -10,6 +10,7 @@
 	display: flex;
 	transition: 0.4s ease-in-out all;
 	justify-content: space-between;
+	min-height: 80px;
 
 	@include breakpoint-max(800) {
 		&::before {

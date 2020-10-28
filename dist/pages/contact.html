@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="keywords"
+			content="Dobra Nada, Azil, Animal Shelter, Dog, Cat, Good Hope, Pas, Mačka"
+		/>
+		<meta name="author" content="Francuski Miroslav" />
+		<meta name="description" content="Animal Shelter" />
+		<title>Kontakt</title>
+		<link
+			rel="icon"
+			href="../assets/images/favicon.png"
+			type="image/svg+xml"
+			sizes="16x16"
+		/>
+		<link rel="stylesheet" href="../app.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<div class="preload">
+			<img src="../assets/images/loading(1).gif" alt="loading-image" />
+		</div>
+
+		<button class="button scrollTopBtn" id="btnScrollToTop">
+			<i class="fas fa-arrow-alt-circle-up"></i>
+		</button>
+		<header class="header">
+			<nav class="nav" id="nav-container">
+				<div class="nav__logo">
+					<a href="../index.html" class="nav__logo-link">
+						<img
+							src="../assets/images/logo.png"
+							alt="animal-shelter_logo"
+							class="nav__img"
+						/>
+					</a>
+				</div>
+
+				<div class="nav__right">
+					<div class="menu-btn" id="menu-btn">
+						<div class="menu-btn__burger"></div>
+					</div>
+
+					<ul class="nav__list" id="nav-list">
+						<li class="nav__list-item">
+							<a href="../index.html" class="header__nav-list-link">Naslovna</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="about.html" class="header__nav-list-link">O nama</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="adopt.html" class="header__nav-list-link">Udomi</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="donate.html" class="header__nav-list-link"
+								>Doniraj/Volontiraj</a
+							>
+						</li>
+						<li class="nav__list-item current">
+							<a href="#" class="header__nav-list-link">Kontakt</a>
+						</li>
+
+						<ul class="nav__social-icons">
+							<li class="nav__social-icon">
+								<a
+									href="https://www.facebook.com/Dobra-NadaGood-Hope-105678714213585"
+									target="”_blank”"
+									class="nav__social-icon-link"
+									><i class="fab fa-facebook-square"></i
+								></a>
+							</li>
+							<li class="nav__social-icon">
+								<a href="#" class="nav__social-icon-link"
+									><i class="fab fa-instagram-square"></i
+								></a>
+							</li>
+							<li class="nav__social-icon">
+								<a href="#" class="nav__social-icon-link"
+									><i class="fab fa-skype"></i
+								></a>
+							</li>
+						</ul>
+					</ul>
+
+					<button class="nav__donate-btn button">Doniraj</button>
+				</div>
+			</nav>
+
+			<section class="hero">
+				<div class="hero__inner">
+					<h1 class="hero__title">Kontakt</h1>
+					<ul class="breadcrumb">
+						<li class="nav__list-item"><a href="../index.html">Naslovna</a></li>
+						<li class="nav__list-item current"><a href="#">Kontakt</a></li>
+					</ul>
+				</div>
+			</section>
+		</header>
+
+		<main class="contact">
+			<form
+				action="/pages/success"
+				class="form"
+				name="contact"
+				method="POST"
+				data-netlify="true"
+				netlify-honeypot="bot-field"
+				id="contact-form"
+			>
+				<p class="hidden">
+					<label>
+						Don’t fill this out if you're human: <input name="bot-field" />
+					</label>
+				</p>
+
+				<div class="form__row">
+					<div class="form__group" id="form-group">
+						<input
+							type="text"
+							class="form__name input"
+							id="name"
+							name="name"
+							placeholder="Ime/Prezime"
+						/>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small class="form__error">error message</small>
+					</div>
+				</div>
+				<div class="form__row">
+					<div class="form__group" id="form-group">
+						<input
+							type="email"
+							class="form__email input"
+							name="email"
+							id="email"
+							placeholder="E-mail"
+						/>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small class="form__error">error message</small>
+					</div>
+				</div>
+
+				<div class="form__group" id="form-group">
+					<textarea
+						class="form__message textarea"
+						name="message"
+						id="message"
+						rows="3"
+						placeholder="Poruka"
+					></textarea>
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small class="form__error">error message</small>
+				</div>
+				<div class="netlify-recaptcha" data-netlify-recaptcha="true"></div>
+				<button type="submit" class="button" id="form-btn">Pošalji</button>
+			</form>
+		</main>
+
+		<footer class="footer">
+			<nav class="footer__nav">
+				<div class="footer__nav-links">
+					<h3 class="footer__nav-title">Linkovi</h3>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="../index.html" class="footer__nav-list-link">Naslovna</a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="about.html" class="footer__nav-list-link">O nama</a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="adopt.html" class="footer__nav-list-link">Udomi</a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="donate.html" class="footer__nav-list-link"
+								>Doniraj/Volontiraj</a
+							>
+						</li>
+						<li class="footer__nav-list-item nav__list-item current">
+							<a href="#" class="footer__nav-list-link">Kontakt</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__sponsors">
+					<h3 class="footer__nav-title">Sponzori</h3>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="#" class="footer__nav-list-link">Sponzor1</a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="#" class="footer__nav-list-link">Sponzor2</a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="#" class="footer__nav-list-link">Sponzor3</a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="#" class="footer__nav-list-link">Sponzor4</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__social-links">
+					<h3 class="footer__nav-title">Društvene mreže</h3>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-list-item nav__list-item">
+							<a
+								href="https://www.facebook.com/Dobra-NadaGood-Hope-105678714213585"
+								target="”_blank”"
+								class="footer__nav-list-link"
+								><i class="fab fa-facebook-square"></i
+							></a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="#" class="footer__nav-list-link"
+								><i class="fab fa-instagram-square"></i
+							></a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="#" class="footer__nav-list-link"
+								><i class="fab fa-skype"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__copyright">
+					<a href="../index.html" class="footer__copyright-link">
+						<img
+							src="../assets/images/logo.png"
+							alt="logo Dobra Nada"
+							class="footer__copyright-img"
+						/>
+					</a>
+
+					<p class="footer__copyright-text">
+						Dobra Nada - Good Hope &copy; 2020.
+					</p>
+				</div>
+			</nav>
+		</footer>
+
+		<script src="../app.js"></script>
+	</body>
+</html>

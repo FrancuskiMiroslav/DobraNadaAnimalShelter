@@ -14,14 +14,98 @@
 		display: flex;
 		flex-direction: column;
 
+		&__group {
+			position: relative;
+			width: 100%;
+			margin-bottom: 25px;
+
+			i {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 10px;
+				color: $secondaryClr;
+				visibility: hidden;
+			}
+
+			small {
+				position: absolute;
+				left: 10px;
+				bottom: -15px;
+				visibility: hidden;
+				font-size: 12px;
+				font-style: italic;
+			}
+		}
+
+		&__group.success {
+			input,
+			textarea {
+				border: 2px solid $primaryClr;
+				background-color: #ffffff;
+				&::placeholder {
+					color: $primaryClr;
+				}
+			}
+
+			i.fa-check-circle {
+				visibility: visible;
+				color: $primaryClr;
+			}
+		}
+
+		&__group.error {
+			input,
+			textarea {
+				border: 2px solid $tertiaryClr;
+				&::placeholder {
+					color: $tertiaryClr;
+				}
+			}
+
+			i.fa-exclamation-circle {
+				visibility: visible;
+				color: $tertiaryClr;
+			}
+
+			small {
+				visibility: visible;
+				color: $tertiaryClr;
+			}
+		}
+
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			flex-wrap: wrap;
+		}
+
+		&__input {
+			&::placeholder {
+				color: #ffffff;
+			}
+		}
+
+		.netlify-recaptcha {
+			@include breakpoint-max(500) {
+				transform: scale(0.7);
+				transform-origin: 0 0;
+			}
+			@include breakpoint-max(400) {
+				transform: scale(0.5);
+				transform-origin: 0 0;
+			}
+		}
+
 		.input,
 		.textarea {
 			background-color: transparent;
 			outline: none;
 			border: 1px solid $bgClr;
-			margin-bottom: 20px;
 			padding: 10px;
 			font-family: $mainFont;
+			width: 100%;
 
 			&::placeholder {
 				font-style: italic;
