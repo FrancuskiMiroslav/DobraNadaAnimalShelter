@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function () {
 	// tabs
 	const tabListBtn = document.querySelectorAll('.tabccordion__list-btn');
 	const tabs = document.querySelectorAll('.tabccordion__container');
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	///// accordion
-	function activateAccordion() {
-		const accordionBtn = document.querySelectorAll('.accordion__list-btn');
+	const accordionBtn = document.querySelectorAll('.accordion__list-btn');
 
+	function activateAccordion() {
 		accordionBtn.forEach((btn) => {
 			btn.addEventListener('click', () => {
 				// check for open accordion
@@ -62,8 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				btn.classList.toggle('open');
 				const accordionBody = btn.nextElementSibling;
 
-				console.log(btn);
-
 				if (btn.classList.contains('open')) {
 					accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
 				} else {
@@ -71,12 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 			});
 		});
-	}
-
-	if (window.innerWidth >= 600) {
-		activateTabs();
-	} else {
-		activateAccordion();
 	}
 
 	window.addEventListener('resize', (e) => {
@@ -87,7 +79,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			tabsContent.forEach((tabs) => {
 				tabs.style.maxHeight = 0;
 			});
+
 			activateAccordion();
 		}
 	});
+
+	activateTabs();
+	activateAccordion();
 });
