@@ -19,25 +19,31 @@
 		color: rgba($color: $bgClr, $alpha: 0.5);
 	}
 
+	&__title {
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
 	.page-header,
 	.page {
 		height: 0;
 		visibility: hidden;
-		transform: scale(0);
-		transform-origin: bottom;
-		transition: 0.5s all ease-in-out;
+		opacity: 0;
 	}
 
 	.active {
 		height: auto;
 		visibility: visible;
-		transform: scale(1);
+		opacity: 1;
+		transition: 1s all ease-in-out;
 	}
 
 	&__main-content {
 		display: flex;
 		align-items: baseline;
 		justify-content: space-between;
+		position: relative;
+
 		@include breakpoint-max(600) {
 			flex-wrap: wrap;
 		}
@@ -46,6 +52,17 @@
 	&__content-switch {
 		min-width: 260px;
 		margin-right: 40px;
+		position: sticky;
+		top: 80px;
+		z-index: 500;
+		@include breakpoint-max(600) {
+			margin-right: 0;
+			width: 100%;
+			.adopt__nav-list {
+				display: flex;
+				width: 100%;
+			}
+		}
 
 		.button {
 			width: 100%;
@@ -67,6 +84,9 @@
 	}
 
 	&__list-item {
+		@include breakpoint-max(600) {
+			width: 50%;
+		}
 		&.active {
 			.button {
 				background-color: darken($tertiaryClr, 5%);
