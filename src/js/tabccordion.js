@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	const tabs = document.querySelectorAll('.tabccordion__container');
 	const tabccordionList = document.getElementById('tabccordion-list');
 	const tabsContent = document.querySelectorAll('.tabccordion__tab-inner');
+	const tabccordion = document.getElementById('tabccordion');
 
 	function activateTabs() {
 		tabListBtn.forEach((tab) => {
@@ -39,6 +40,12 @@ window.addEventListener('DOMContentLoaded', function () {
 				tab.querySelector('.tabccordion__list .tabccordion__btn').click();
 			});
 		}
+
+		window.addEventListener('resize', (e) => {
+			if (window.innerWidth >= 600) {
+				activateTabs();
+			}
+		});
 	}
 
 	///// accordion
@@ -69,21 +76,21 @@ window.addEventListener('DOMContentLoaded', function () {
 				}
 			});
 		});
+
+		window.addEventListener('resize', (e) => {
+			if (window.innerWidth < 600) {
+				tabsContent.forEach((tabs) => {
+					tabs.style.maxHeight = 0;
+					if (tabs.previousElementSibling.classList.contains('open')) {
+						tabs.previousElementSibling.classList.remove('open');
+					}
+				});
+			}
+		});
 	}
 
-	window.addEventListener('resize', (e) => {
-		if (window.innerWidth >= 600) {
-			activateTabs();
-			activateAccordion();
-		} else {
-			tabsContent.forEach((tabs) => {
-				tabs.style.maxHeight = 0;
-			});
-
-			activateAccordion();
-		}
-	});
-
-	activateTabs();
-	activateAccordion();
+	if (tabccordion) {
+		activateTabs();
+		activateAccordion();
+	}
 });

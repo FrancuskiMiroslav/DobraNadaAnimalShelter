@@ -28,8 +28,11 @@ body {
 	flex-direction: column;
 }
 
+main {
+	background-color: rgba($color: $bgClr, $alpha: 0.06);
+}
+
 .home-main {
-	background-color: rgba($color: $bgClr, $alpha: 0.25);
 	.boxes {
 		&__inner-wrap {
 			@include wrapper(1200, 30);
