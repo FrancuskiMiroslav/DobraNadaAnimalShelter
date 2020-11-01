@@ -3,6 +3,7 @@
        {
           "dogs":[
              {
+                "#": 1,
                 "species":"dog",
                 "breed":"",
                 "color":"brown, white",
@@ -12,9 +13,11 @@
                 "birth":2016,
                 "name":"Alisa",
                 "gender":"female",
-                "image":"./assets/images/dogs/alisa.jpg"
+                "image":"./assets/images/dogs/alisa.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 2,
                 "species":"dog",
                 "breed":"",
                 "color":"brown, ginger",
@@ -24,9 +27,11 @@
                 "birth":2016,
                 "name":"Riči",
                 "gender":"male",
-                "image":"./assets/images/dogs/rici.jpg"
+                "image":"./assets/images/dogs/rici.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 3,
                 "species":"dog",
                 "breed":"",
                 "color":"brown, black",
@@ -36,9 +41,11 @@
                 "birth":2016,
                 "name":"Lina",
                 "gender":"female",
-                "image":"./assets/images/dogs/lina.jpg"
+                "image":"./assets/images/dogs/lina.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 4,
                 "species":"dog",
                 "breed":"",
                 "color":"gray, white",
@@ -48,9 +55,11 @@
                 "birth":2016,
                 "name":"Flekica",
                 "gender":"female",
-                "image":"./assets/images/dogs/flekica.jpg"
+                "image":"./assets/images/dogs/flekica.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 5,
                 "species":"dog",
                 "breed":"",
                 "color":"brown",
@@ -60,9 +69,11 @@
                 "birth":2016,
                 "name":"Danica",
                 "gender":"female",
-                "image":"./assets/images/dogs/danica.jpg"
+                "image":"./assets/images/dogs/danica.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 6,
                 "species":"dog",
                 "breed":"",
                 "color":"black, white",
@@ -72,9 +83,11 @@
                 "birth":2016,
                 "name":"Lena",
                 "gender":"female",
-                "image":"./assets/images/dogs/lena.jpg"
+                "image":"./assets/images/dogs/lena.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 7,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -84,9 +97,11 @@
                 "birth":2016,
                 "name":"Cuca",
                 "gender":"female",
-                "image":"./assets/images/dogs/cuca.jpg"
+                "image":"./assets/images/dogs/cuca.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 8,
                 "species":"dog",
                 "breed":"",
                 "color":"brown",
@@ -96,9 +111,11 @@
                 "birth":2016,
                 "name":"Ribica",
                 "gender":"female",
-                "image":"./assets/images/dogs/ribica.jpg"
+                "image":"./assets/images/dogs/ribica.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 9,
                 "species":"dog",
                 "breed":"",
                 "color":"brown",
@@ -108,9 +125,11 @@
                 "birth":2016,
                 "name":"Kika",
                 "gender":"female",
-                "image":"./assets/images/dogs/kika.jpg"
+                "image":"./assets/images/dogs/kika.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 10,
                 "species":"dog",
                 "breed":"",
                 "color":"black, white",
@@ -120,9 +139,11 @@
                 "birth":2016,
                 "name":"Abba",
                 "gender":"female",
-                "image":"./assets/images/dogs/abba.jpg"
+                "image":"./assets/images/dogs/abba.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 11,
                 "species":"dog",
                 "breed":"",
                 "color":"orange, brown, black",
@@ -132,9 +153,11 @@
                 "birth":2016,
                 "name":"Pluton",
                 "gender":"male",
-                "image":"./assets/images/dogs/pluton.jpg"
+                "image":"./assets/images/dogs/pluton.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 12,
                 "species":"dog",
                 "breed":"",
                 "color":"chocolate",
@@ -144,9 +167,11 @@
                 "birth":2016,
                 "name":"Didra",
                 "gender":"female",
-                "image":"./assets/images/dogs/didra.jpg"
+                "image":"./assets/images/dogs/didra.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 13,
                 "species":"dog",
                 "breed":"",
                 "color":"black, brown",
@@ -156,9 +181,11 @@
                 "birth":2016,
                 "name":"Raja",
                 "gender":"female",
-                "image":"./assets/images/dogs/raja.jpg"
+                "image":"./assets/images/dogs/raja.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 14,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -168,9 +195,11 @@
                 "birth":2016,
                 "name":"Ljubica",
                 "gender":"female",
-                "image":"./assets/images/dogs/ljubica.jpg"
+                "image":"./assets/images/dogs/ljubica.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 15,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -180,9 +209,11 @@
                 "birth":2016,
                 "name":"Lada",
                 "gender":"female",
-                "image":"./assets/images/dogs/Lada.jpg"
+                "image":"./assets/images/dogs/Lada.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 16,
                 "species":"dog",
                 "breed":"",
                 "color":"brown",
@@ -192,9 +223,11 @@
                 "birth":2016,
                 "name":"Dejsi",
                 "gender":"female",
-                "image":"./assets/images/dogs/dejsi.jpg"
+                "image":"./assets/images/dogs/dejsi.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 17,
                 "species":"dog",
                 "breed":"",
                 "color":"black, cream",
@@ -204,9 +237,11 @@
                 "birth":2016,
                 "name":"Bogar",
                 "gender":"male",
-                "image":"./assets/images/dogs/bogar.jpg"
+                "image":"./assets/images/dogs/bogar.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 18,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -216,9 +251,11 @@
                 "birth":2016,
                 "name":"Perse",
                 "gender":"male",
-                "image":"./assets/images/dogs/perse.jpg"
+                "image":"./assets/images/dogs/perse.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 19,
                 "species":"dog",
                 "breed":"",
                 "color":"yellow, brown",
@@ -228,9 +265,11 @@
                 "birth":2016,
                 "name":"Barni",
                 "gender":"male",
-                "image":"./assets/images/dogs/barni.jpg"
+                "image":"./assets/images/dogs/barni.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 20,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -240,9 +279,11 @@
                 "birth":2016,
                 "name":"Semi Džo",
                 "gender":"female",
-                "image":"./assets/images/dogs/semidzo.jpg"
+                "image":"./assets/images/dogs/semidzo.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 21,
                 "species":"dog",
                 "breed":"",
                 "color":"black, white",
@@ -252,9 +293,11 @@
                 "birth":2016,
                 "name":"Bongo",
                 "gender":"male",
-                "image":"./assets/images/dogs/bongo.jpg"
+                "image":"./assets/images/dogs/bongo.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 22,
                 "species":"dog",
                 "breed":"",
                 "color":"black, brown",
@@ -264,9 +307,11 @@
                 "birth":2016,
                 "name":"Luna",
                 "gender":"female",
-                "image":"./assets/images/dogs/luna.jpg"
+                "image":"./assets/images/dogs/luna.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 23,
                 "species":"dog",
                 "breed":"",
                 "color":"black, brown",
@@ -276,9 +321,11 @@
                 "birth":2016,
                 "name":"Djina",
                 "gender":"female",
-                "image":"./assets/images/dogs/djina.jpg"
+                "image":"./assets/images/dogs/djina.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 24,
                 "species":"dog",
                 "breed":"",
                 "color":"gray, brown",
@@ -288,9 +335,11 @@
                 "birth":2016,
                 "name":"Foksi",
                 "gender":"male",
-                "image":"./assets/images/dogs/foksi.jpg"
+                "image":"./assets/images/dogs/foksi.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 25,
                 "species":"dog",
                 "breed":"",
                 "color":"gray, black",
@@ -300,9 +349,11 @@
                 "birth":2016,
                 "name":"Kvana",
                 "gender":"female",
-                "image":"./assets/images/dogs/kvana.jpg"
+                "image":"./assets/images/dogs/kvana.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 26,
                 "species":"dog",
                 "breed":"",
                 "color":"brown, white",
@@ -312,9 +363,11 @@
                 "birth":2016,
                 "name":"Mila",
                 "gender":"female",
-                "image":"./assets/images/dogs/mila.jpg"
+                "image":"./assets/images/dogs/mila.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 27,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -324,9 +377,11 @@
                 "birth":2016,
                 "name":"Kasja",
                 "gender":"female",
-                "image":"./assets/images/dogs/kajsa.jpg"
+                "image":"./assets/images/dogs/kajsa.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 28,
                 "species":"dog",
                 "breed":"",
                 "color":"yellow, white",
@@ -336,9 +391,11 @@
                 "birth":2016,
                 "name":"Lili",
                 "gender":"female",
-                "image":"./assets/images/dogs/lili.jpg"
+                "image":"./assets/images/dogs/lili.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 29,
                 "species":"dog",
                 "breed":"",
                 "color":"brown",
@@ -348,9 +405,11 @@
                 "birth":2016,
                 "name":"Bak",
                 "gender":"male",
-                "image":"./assets/images/dogs/bak.jpg"
+                "image":"./assets/images/dogs/bak.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 30,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -360,9 +419,11 @@
                 "birth":2016,
                 "name":"Ali",
                 "gender":"female",
-                "image":"./assets/images/dogs/ali.jpg"
+                "image":"./assets/images/dogs/ali.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 31,
                 "species":"dog",
                 "breed":"",
                 "color":"white, brown",
@@ -372,9 +433,11 @@
                 "birth":2016,
                 "name":"Viktor",
                 "gender":"male",
-                "image":"./assets/images/dogs/viktor.jpg"
+                "image":"./assets/images/dogs/viktor.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 32,
                 "species":"dog",
                 "breed":"",
                 "color":"yellow, white",
@@ -384,9 +447,11 @@
                 "birth":2016,
                 "name":"Oskar",
                 "gender":"male",
-                "image":"./assets/images/dogs/oskar.jpg"
+                "image":"./assets/images/dogs/oskar.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 33,
                 "species":"dog",
                 "breed":"Labrador",
                 "color":"yellow",
@@ -396,9 +461,11 @@
                 "birth":2016,
                 "name":"Sara",
                 "gender":"female",
-                "image":"./assets/images/dogs/sara.jpg"
+                "image":"./assets/images/dogs/sara.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 34,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -408,9 +475,11 @@
                 "birth":2016,
                 "name":"Mr. Spock",
                 "gender":"male",
-                "image":"./assets/images/dogs/mrspock.jpg"
+                "image":"./assets/images/dogs/mrspock.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 35,
                 "species":"dog",
                 "breed":"Staffordshire Bull Terrier",
                 "color":"yellow",
@@ -420,9 +489,11 @@
                 "birth":2016,
                 "name":"Niki",
                 "gender":"female",
-                "image":"./assets/images/dogs/niki.jpg"
+                "image":"./assets/images/dogs/niki.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 36,
                 "species":"dog",
                 "breed":"",
                 "color":"black, brown",
@@ -432,9 +503,11 @@
                 "birth":2016,
                 "name":"Bukši",
                 "gender":"female",
-                "image":"./assets/images/dogs/buksi.jpg"
+                "image":"./assets/images/dogs/buksi.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 37,
                 "species":"dog",
                 "breed":"",
                 "color":"black, brown",
@@ -444,9 +517,11 @@
                 "birth":2016,
                 "name":"Frenki",
                 "gender":"male",
-                "image":"./assets/images/dogs/frenki.jpg"
+                "image":"./assets/images/dogs/frenki.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 38,
                 "species":"dog",
                 "breed":"",
                 "color":"gold, white",
@@ -456,9 +531,11 @@
                 "birth":2016,
                 "name":"Lolo",
                 "gender":"male",
-                "image":"./assets/images/dogs/lolo.jpg"
+                "image":"./assets/images/dogs/lolo.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 39,
                 "species":"dog",
                 "breed":"",
                 "color":"black",
@@ -468,9 +545,11 @@
                 "birth":2016,
                 "name":"Ogi",
                 "gender":"male",
-                "image":"./assets/images/dogs/ogi.jpg"
+                "image":"./assets/images/dogs/ogi.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 40,
                 "species":"dog",
                 "breed":"",
                 "color":"chocolate",
@@ -480,9 +559,11 @@
                 "birth":2016,
                 "name":"Magi",
                 "gender":"male",
-                "image":"./assets/images/dogs/magi.jpg"
+                "image":"./assets/images/dogs/magi.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 41,
                 "species":"dog",
                 "breed":"",
                 "color":"yellow, brown",
@@ -492,9 +573,11 @@
                 "birth":2016,
                 "name":"Dunja",
                 "gender":"female",
-                "image":"./assets/images/dogs/dunja.jpg"
+                "image":"./assets/images/dogs/dunja.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 42,
                 "species":"dog",
                 "breed":"",
                 "color":"brown, yellow",
@@ -504,9 +587,11 @@
                 "birth":2016,
                 "name":"Vučka",
                 "gender":"female",
-                "image":"./assets/images/dogs/vucka.jpg"
+                "image":"./assets/images/dogs/vucka.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 43,
                 "species":"dog",
                 "breed":"",
                 "color":"yellow",
@@ -516,9 +601,11 @@
                 "birth":2016,
                 "name":"Bruno",
                 "gender":"male",
-                "image":"./assets/images/dogs/bruno.jpg"
+                "image":"./assets/images/dogs/bruno.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
+               "#": 44,
                 "species":"dog",
                 "breed":"",
                 "color":"yellow",
@@ -528,11 +615,13 @@
                 "birth":2016,
                 "name":"Pako",
                 "gender":"male",
-                "image":"./assets/images/dogs/pako.jpg"
+                "image":"./assets/images/dogs/pako.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              }
           ],
           "cats":[
              {
+               "#": 1,
                 "species":"cat",
                 "breed":"",
                 "color":"",
@@ -542,7 +631,8 @@
                 "birth":"",
                 "name":"",
                 "gender":"",
-                "image":"./assets/images/cats/.jpg"
+                "image":"./assets/images/cats/.jpg",
+                "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              }
           ]
        }
