@@ -3,119 +3,119 @@
        {
           "dogs":[
              {
-                "#": 1,
+                "number": 1,
                 "species":"dog",
                 "breed":"",
-                "color":["brown, white"],
+                "color":["brown", "white"],
                 "weight":14,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth": "January 1, 2013",
                 "name":"Alisa",
                 "gender":"female",
                 "image":"./assets/images/dogs/alisa.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 2,
+               "number": 2,
                 "species":"dog",
                 "breed":"",
-                "color":["brown, ginger"],
+                "color":["brown", "ginger"],
                 "weight":11,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2017,
                 "name":"Riči",
                 "gender":"male",
                 "image":"./assets/images/dogs/rici.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 3,
+               "number": 3,
                 "species":"dog",
                 "breed":"",
-                "color":["brown, black"],
+                "color":["brown", "black"],
                 "weight":25,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2010,
                 "name":"Lina",
                 "gender":"female",
                 "image":"./assets/images/dogs/lina.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 4,
+               "number": 4,
                 "species":"dog",
                 "breed":"",
-                "color":["gray, white"],
+                "color":["gray", "white"],
                 "weight":15,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2011,
                 "name":"Flekica",
                 "gender":"female",
                 "image":"./assets/images/dogs/flekica.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 5,
+               "number": 5,
                 "species":"dog",
                 "breed":"",
                 "color":["brown"],
                 "weight":12,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2012,
                 "name":"Danica",
                 "gender":"female",
                 "image":"./assets/images/dogs/danica.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 6,
+               "number": 6,
                 "species":"dog",
                 "breed":"",
-                "color":["black, white"],
+                "color":["black", "white"],
                 "weight":21,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2013,
                 "name":"Lena",
                 "gender":"female",
                 "image":"./assets/images/dogs/lena.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 7,
+               "number": 7,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
                 "weight":14,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2014,
                 "name":"Cuca",
                 "gender":"female",
                 "image":"./assets/images/dogs/cuca.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 8,
+               "number": 8,
                 "species":"dog",
                 "breed":"",
                 "color":["brown"],
                 "weight":9,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2015,
                 "name":"Ribica",
                 "gender":"female",
                 "image":"./assets/images/dogs/ribica.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 9,
+               "number": 9,
                 "species":"dog",
                 "breed":"",
                 "color":["brown"],
@@ -129,35 +129,35 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 10,
+               "number": 10,
                 "species":"dog",
                 "breed":"",
-                "color":["black, white"],
+                "color":["black", "white"],
                 "weight":20,
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2017,
                 "name":"Abba",
                 "gender":"female",
                 "image":"./assets/images/dogs/abba.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 11,
+               "number": 11,
                 "species":"dog",
                 "breed":"",
-                "color":["orange, brown, black"],
+                "color":["orange","brown", "black"],
                 "weight":"30+",
                 "height":"",
                 "coat":"",
-                "birth":2016,
+                "birth":2018,
                 "name":"Pluton",
                 "gender":"male",
                 "image":"./assets/images/dogs/pluton.jpg",
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 12,
+               "number": 12,
                 "species":"dog",
                 "breed":"",
                 "color":["chocolate"],
@@ -171,10 +171,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 13,
+               "number": 13,
                 "species":"dog",
                 "breed":"",
-                "color":["black, brown"],
+                "color":["black", "brown"],
                 "weight":14,
                 "height":"",
                 "coat":"",
@@ -185,7 +185,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 14,
+               "number": 14,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
@@ -199,7 +199,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 15,
+               "number": 15,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
@@ -213,7 +213,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 16,
+               "number": 16,
                 "species":"dog",
                 "breed":"",
                 "color":["brown"],
@@ -227,10 +227,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 17,
+               "number": 17,
                 "species":"dog",
                 "breed":"",
-                "color":["black, cream"],
+                "color":["black", "cream"],
                 "weight":18,
                 "height":"",
                 "coat":"",
@@ -241,7 +241,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 18,
+               "number": 18,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
@@ -255,10 +255,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 19,
+               "number": 19,
                 "species":"dog",
                 "breed":"",
-                "color":["yellow, brown"],
+                "color":["yellow", "brown"],
                 "weight":11,
                 "height":"",
                 "coat":"",
@@ -269,7 +269,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 20,
+               "number": 20,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
@@ -283,10 +283,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 21,
+               "number": 21,
                 "species":"dog",
                 "breed":"",
-                "color":["black, white"],
+                "color":["black", "white"],
                 "weight":11,
                 "height":"",
                 "coat":"",
@@ -297,10 +297,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 22,
+               "number": 22,
                 "species":"dog",
                 "breed":"",
-                "color":["black, brown"],
+                "color":["black", "brown"],
                 "weight":15,
                 "height":"",
                 "coat":"",
@@ -311,10 +311,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 23,
+               "number": 23,
                 "species":"dog",
                 "breed":"",
-                "color":["black, brown"],
+                "color":["black", "brown"],
                 "weight":7,
                 "height":"",
                 "coat":"",
@@ -325,10 +325,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 24,
+               "number": 24,
                 "species":"dog",
                 "breed":"",
-                "color":["gray, brown"],
+                "color":["gray", "brown"],
                 "weight":9,
                 "height":"",
                 "coat":"",
@@ -339,10 +339,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 25,
+               "number": 25,
                 "species":"dog",
                 "breed":"",
-                "color":["gray, black"],
+                "color":["gray", "black"],
                 "weight":18,
                 "height":"",
                 "coat":"",
@@ -353,10 +353,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 26,
+               "number": 26,
                 "species":"dog",
                 "breed":"",
-                "color":["brown, white"],
+                "color":["brown", "white"],
                 "weight":18,
                 "height":"",
                 "coat":"",
@@ -367,7 +367,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 27,
+               "number": 27,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
@@ -381,10 +381,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 28,
+               "number": 28,
                 "species":"dog",
                 "breed":"",
-                "color":["yellow, white"],
+                "color":["yellow", "white"],
                 "weight":18,
                 "height":"",
                 "coat":"",
@@ -395,7 +395,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 29,
+               "number": 29,
                 "species":"dog",
                 "breed":"",
                 "color":["brown"],
@@ -409,7 +409,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 30,
+               "number": 30,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
@@ -423,10 +423,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 31,
+               "number": 31,
                 "species":"dog",
                 "breed":"",
-                "color":["white, brown"],
+                "color":["white", "brown"],
                 "weight":19,
                 "height":"",
                 "coat":"",
@@ -437,10 +437,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 32,
+               "number": 32,
                 "species":"dog",
                 "breed":"",
-                "color":["yellow, white"],
+                "color":["yellow", "white"],
                 "weight":12,
                 "height":"",
                 "coat":"",
@@ -451,7 +451,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 33,
+               "number": 33,
                 "species":"dog",
                 "breed":"Labrador",
                 "color":["yellow"],
@@ -465,7 +465,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 34,
+               "number": 34,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
@@ -479,7 +479,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 35,
+               "number": 35,
                 "species":"dog",
                 "breed":"Staffordshire Bull Terrier",
                 "color":["yellow"],
@@ -493,10 +493,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 36,
+               "number": 36,
                 "species":"dog",
                 "breed":"",
-                "color":["black, brown"],
+                "color":["black", "brown"],
                 "weight":"30+",
                 "height":"",
                 "coat":"",
@@ -507,10 +507,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 37,
+               "number": 37,
                 "species":"dog",
                 "breed":"",
-                "color":["black, brown"],
+                "color":["black", "brown"],
                 "weight":9,
                 "height":"",
                 "coat":"",
@@ -521,10 +521,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 38,
+               "number": 38,
                 "species":"dog",
                 "breed":"",
-                "color":["gold, white"],
+                "color":["gold", "white"],
                 "weight":12,
                 "height":"",
                 "coat":"",
@@ -535,7 +535,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 39,
+               "number": 39,
                 "species":"dog",
                 "breed":"",
                 "color":["black"],
@@ -549,7 +549,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 40,
+               "number": 40,
                 "species":"dog",
                 "breed":"",
                 "color":["chocolate"],
@@ -563,10 +563,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 41,
+               "number": 41,
                 "species":"dog",
                 "breed":"",
-                "color":["yellow, brown"],
+                "color":["yellow", "brown"],
                 "weight":15,
                 "height":"",
                 "coat":"",
@@ -577,10 +577,10 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 42,
+               "number": 42,
                 "species":"dog",
                 "breed":"",
-                "color":["brown, yellow"],
+                "color":["brown", "yellow"],
                 "weight":21,
                 "height":"",
                 "coat":"",
@@ -591,7 +591,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 43,
+               "number": 43,
                 "species":"dog",
                 "breed":"",
                 "color":["yellow"],
@@ -605,7 +605,7 @@
                 "desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
              },
              {
-               "#": 44,
+               "number": 44,
                 "species":"dog",
                 "breed":"",
                 "color":["yellow"],
@@ -621,7 +621,7 @@
           ],
           "cats":[
              {
-               "#": 1,
+               "number": 1,
                 "species":"cat",
                 "breed":"",
                 "color":["grey"],
@@ -635,7 +635,7 @@
                 "desc": "This beautiful cat had health issues her family couldn’t take care of, so she came to us, and we quickly found her a place in our shelter. She is a very lovable 4 yr old female domestic shorthair cat and she weighs 10 pounds. Lavender is all about affection and looking for that special person to spend the rest of her life with. She is wonderful indoors and she enjoys dry cat food."
              },
              {
-               "#": 2,
+               "number": 2,
                 "species":"cat",
                 "breed":"",
                 "color":[],
@@ -649,7 +649,7 @@
                 "desc": "This beautiful cat had health issues her family couldn’t take care of, so she came to us, and we quickly found her a place in our shelter. She is a very lovable 4 yr old female domestic shorthair cat and she weighs 10 pounds. Lavender is all about affection and looking for that special person to spend the rest of her life with. She is wonderful indoors and she enjoys dry cat food."
              },
              {
-               "#": 3,
+               "number": 3,
                 "species":"cat",
                 "breed":"",
                 "color":["black", "white"],
