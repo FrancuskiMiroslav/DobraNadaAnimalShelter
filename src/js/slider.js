@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	let firstSlide;
 	let lastSlide;
 
-	function getJsonData() {
+	function getSlidesData() {
 		return new Promise((resolve, reject) => {
 			fetch(carouselUrl)
 				.then((resp) => resp.json())
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	async function displayCarousel() {
-		const dataList = await getJsonData();
+		const dataList = await getSlidesData();
 		const slidesArray = dataList.slides;
 
 		slidesArray.forEach((slide, slideNumber) => {

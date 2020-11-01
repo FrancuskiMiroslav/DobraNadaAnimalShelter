@@ -13,26 +13,4 @@ document.addEventListener('DOMContentLoaded', function () {
 			behavior: 'smooth',
 		});
 	});
-
-	const expandsMore = document.querySelectorAll('[expand-more]');
-
-	function expand() {
-		const showContent = document.getElementById(this.dataset.target);
-		if (showContent.classList.contains('active')) {
-			this.innerHTML = this.dataset.showtext;
-		} else {
-			this.innerHTML = this.dataset.hidetext;
-		}
-
-		showContent.classList.toggle('active');
-		if (showContent.classList.contains('active')) {
-			showContent.style.maxHeight = showContent.scrollHeight + 'px';
-		} else {
-			showContent.style.maxHeight = 20 + 'px';
-		}
-	}
-
-	expandsMore.forEach((btn) => {
-		btn.addEventListener('click', expand);
-	});
 });
