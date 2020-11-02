@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const animalsUrl = '../js/animals.json';
 	const animalsPages = document.getElementById('animals-pages');
 	const dogsBox = document.getElementById('dogs-box');
+	const catsBox = document.getElementById('cats-box');
 
 	function getAnimalsData() {
 		return new Promise((resolve, reject) => {
@@ -118,6 +119,107 @@ document.addEventListener('DOMContentLoaded', function () {
                 `;
 
 				dogsBox.appendChild(dogBox);
+			});
+
+			catsArray.forEach((cat) => {
+				catBox = document.createElement('div');
+				catBox.classList.add('page__box');
+
+				const catYears = cat.birth;
+
+				const milisecsBetweenDOBand1970cat = Date.parse(catYears);
+				const milisecsBetweenNOWand1970 = Date.now();
+
+				const ageInMilisecsCat =
+					milisecsBetweenNOWand1970 - milisecsBetweenDOBand1970cat;
+
+				const milisecsCat = ageInMilisecsCat;
+				const secs = 1000;
+				const mins = secs * 60;
+				const hour = mins * 60;
+				const day = hour * 24;
+				const year = day * 365;
+
+				let yearsCat = Math.round(milisecsCat / year);
+
+				catBox.innerHTML = `
+                        <div class="page__box-top">
+                            <img src=".${cat.image}" alt="${cat.name} ${
+					cat.species
+				}"}/>
+                        </div>
+                        <div class="page__box-bottom">
+                            <h3 class="page__box-title">${cat.name}</h3>
+                            <div class="page__box-content">
+                                <div class="expandMoreContent" id="showMore-${
+																	cat.species
+																}${cat.number}">
+                                    <p class="page__box-text">
+                                        ${cat.desc}
+                                    </p>
+                                </div>
+    
+                                <div class="expandMoreHolder">
+                                    <button
+                                        expand-more
+                                        data-hidetext="...Read less"
+                                        data-showtext="...Read more"
+                                        data-target="showMore-${cat.species}${
+					cat.number
+				}"
+                                        class="button showMore"
+                                    >
+                                        ...Read more
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <ul class="page__box-icons">
+                                <li class="page__box-icon">
+                                    <i class="fas fa-weight"></i
+                                    ><span class="page__box-icon--text">${
+																			cat.weight
+																		} kg</span>
+                                </li>
+                                <li class="page__box-icon">
+                                    <i class="fas fa-arrows-alt-v"></i
+                                    ><span class="page__box-icon--text">${
+																			cat.height
+																		}cm</span>
+                                </li>
+                                <li class="page__box-icon">
+                                    <i class="fas fa-calendar-check"></i
+                                    ><span class="page__box-icon--text">${yearsCat} yr.</span>
+                                </li>
+                                <li class="page__box-icon">
+									<i class="fas fa-palette"></i
+									><span class="page__box-icon--text">${cat.color[0] ? cat.color[0] : '-'}</span>
+                                </li>
+                                <li class="page__box-icon">
+									<i class="fas fa-palette"></i
+									><span class="page__box-icon--text">${cat.color[1] ? cat.color[1] : '-'}</span>
+                                </li>
+                                <li class="page__box-icon">
+									<i class="fas fa-palette"></i
+									><span class="page__box-icon--text">${cat.color[2] ? cat.color[2] : '-'}</span>
+								</li>
+                                <li class="page__box-icon">
+                                    <i class="fas fa-paw"></i
+                                    ><span class="page__box-icon--text">${
+																			cat.coat
+																		}</span>
+                                </li>
+                                <li class="page__box-icon">
+                                    <i class="fas fa-venus-mars"></i
+                                    ><span class="page__box-icon--text">${
+																			cat.gender
+																		}</span>
+                                </li>
+                            </ul>
+                        </div>
+                `;
+
+				catsBox.appendChild(catBox);
 			});
 		});
 
