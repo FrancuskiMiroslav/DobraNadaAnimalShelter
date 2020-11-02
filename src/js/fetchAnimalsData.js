@@ -13,6 +13,26 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+	const dogNumber = document.getElementById('dogNumber');
+	const catNumber = document.getElementById('catNumber');
+
+	async function displayAnimalNumbers() {
+		const dataList = await getAnimalsData();
+		const animalsArray = dataList.animals;
+
+		let dogsArrayNumber = animalsArray[0].dogs.length;
+		let catsArrayNumber = animalsArray[0].cats.length;
+
+		dogNumber.innerText = dogsArrayNumber;
+		catNumber.innerText = catsArrayNumber;
+	}
+
+	if ((dogNumber, catNumber)) {
+		(function () {
+			displayAnimalNumbers();
+		})();
+	}
+
 	async function displayAnimals() {
 		const dataList = await getAnimalsData();
 		const animalsArray = dataList.animals;
