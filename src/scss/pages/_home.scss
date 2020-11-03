@@ -112,6 +112,10 @@ main {
 			transition: 0.4s ease-in-out all;
 			border-radius: 0;
 			clip-path: polygon(55px 0, 100% 0, 100% 100%, 0 100%);
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 0;
 
 			@include breakpoint-max(800) {
 				position: relative;
@@ -142,6 +146,13 @@ main {
 
 		&__box-link {
 			@include fluid-typo(375px, 1920px, 10px, 16px);
+			height: 100%;
+			margin-top: auto;
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 20px;
 		}
 	}
 

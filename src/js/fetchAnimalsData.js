@@ -243,6 +243,102 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		});
 
+		let dogBoxArray = [...document.querySelectorAll('#dogs-box .page__box')];
+		let catBoxArray = [...document.querySelectorAll('#cats-box .page__box')];
+		let currentPage = 1;
+		let elementsOnPage = 4;
+
+		const paginationElDogs = document.getElementById('dogs-pagination');
+		const paginationElCats = document.getElementById('cats-pagination');
+
+		function displayPaginatedItems(items, wrapper, itemsPerPage, page) {
+			wrapper.innerHTML = '';
+			page--;
+
+			let start = itemsPerPage * page;
+			let end = start + itemsPerPage;
+			let paginatedItems = items.slice(start, end);
+
+			paginatedItems.forEach((item) => {
+				let itemEl = document.createElement('div');
+				itemEl.classList.add('page__box');
+
+				itemEl = item;
+
+				wrapper.appendChild(itemEl);
+			});
+		}
+
+		function displayPagination(items, wrapper, itemsPerPage) {
+			wrapper.innerHTML = '';
+
+			let pageCount = Math.ceil(items.length / itemsPerPage);
+
+			for (let i = 1; i < pageCount + 1; i++) {
+				let btn = paginationButton(i);
+
+				wrapper.appendChild(btn);
+			}
+		}
+
+		function paginationButton(page) {
+			let button = document.createElement('button');
+			button.classList.add('pagination-btn');
+			button.innerText = page;
+
+			if (currentPage == page) {
+				button.classList.add('active');
+			}
+
+			button.addEventListener('click', (e) => {
+				currentPage = page;
+
+				displayPaginatedItems(
+					dogBoxArray,
+					dogsBox,
+					elementsOnPage,
+					currentPage
+				);
+
+				displayPaginatedItems(
+					catBoxArray,
+					catsBox,
+					elementsOnPage,
+					currentPage
+				);
+
+				let activeBtnDog = document.querySelector(
+					'#dogs .pagination-btn.active'
+				);
+				let activeBtnCat = document.querySelector(
+					'#cats .pagination-btn.active'
+				);
+
+				console.log(activeBtnDog);
+				if (activeBtnDog) {
+					activeBtnDog.classList.remove('active');
+				}
+
+				if (activeBtnCat) {
+					activeBtnCat.classList.remove('active');
+				}
+
+				button.classList.add('active');
+			});
+
+			return button;
+		}
+
+		if (dogsBox) {
+			displayPaginatedItems(dogBoxArray, dogsBox, elementsOnPage, currentPage);
+			displayPagination(dogBoxArray, paginationElDogs, elementsOnPage);
+		}
+
+		if (catsBox) {
+			displayPaginatedItems(catBoxArray, catsBox, elementsOnPage, currentPage);
+			displayPagination(catBoxArray, paginationElCats, elementsOnPage);
+		}
+
 		const expandsMore = document.querySelectorAll('[expand-more]');
 
 		function expand() {

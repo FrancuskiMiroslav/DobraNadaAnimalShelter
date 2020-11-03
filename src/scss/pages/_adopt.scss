@@ -248,5 +248,12 @@
 				@include fluid-typo(375px, 1920px, 10px, 14px);
 			}
 		}
+
+		&__numbers {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 }
