@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let dogBoxArray = [...document.querySelectorAll('#dogs-box .page__box')];
 		let catBoxArray = [...document.querySelectorAll('#cats-box .page__box')];
 		let currentPage = 1;
-		let elementsOnPage = 6;
+		let elementsOnPage = 4;
 
 		const paginationElDogs = document.getElementById('dogs-pagination');
 		const paginationElCats = document.getElementById('cats-pagination');
