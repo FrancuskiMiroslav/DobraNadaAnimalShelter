@@ -279,6 +279,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 				wrapper.appendChild(btn);
 			}
+
+			let prevBtn = document.createElement('button');
+			prevBtn.id = 'prev';
+			prevBtn.innerText = '<';
+			prevBtn.classList.add('pagination-btn');
+			wrapper.prepend(prevBtn);
+
+			let nextBtn = document.createElement('button');
+			nextBtn.id = 'next';
+			nextBtn.innerText = '>';
+			nextBtn.classList.add('pagination-btn');
+			wrapper.appendChild(nextBtn);
 		}
 
 		function paginationButton(page) {
@@ -331,16 +343,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			return button;
 		}
 
-		if (dogsBox) {
-			displayPaginatedItems(dogBoxArray, dogsBox, elementsOnPage, currentPage);
-			displayPagination(dogBoxArray, paginationElDogs, elementsOnPage);
-		}
-
-		if (catsBox) {
-			displayPaginatedItems(catBoxArray, catsBox, elementsOnPage, currentPage);
-			displayPagination(catBoxArray, paginationElCats, elementsOnPage);
-		}
-
 		const expandsMore = document.querySelectorAll('[expand-more]');
 
 		function expand() {
@@ -359,9 +361,23 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}
 
-		expandsMore.forEach((btn) => {
-			btn.addEventListener('click', expand);
-		});
+		if (dogsBox) {
+			displayPaginatedItems(dogBoxArray, dogsBox, elementsOnPage, currentPage);
+			displayPagination(dogBoxArray, paginationElDogs, elementsOnPage);
+
+			expandsMore.forEach((btn) => {
+				btn.addEventListener('click', expand);
+			});
+		}
+
+		if (catsBox) {
+			displayPaginatedItems(catBoxArray, catsBox, elementsOnPage, currentPage);
+			displayPagination(catBoxArray, paginationElCats, elementsOnPage);
+
+			expandsMore.forEach((btn) => {
+				btn.addEventListener('click', expand);
+			});
+		}
 	}
 
 	if (animalsPages) {
