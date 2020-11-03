@@ -293,37 +293,39 @@ document.addEventListener('DOMContentLoaded', function () {
 			button.addEventListener('click', (e) => {
 				currentPage = page;
 
-				displayPaginatedItems(
-					dogBoxArray,
-					dogsBox,
-					elementsOnPage,
-					currentPage
-				);
+				if (button.parentElement == paginationElDogs) {
+					displayPaginatedItems(
+						dogBoxArray,
+						dogsBox,
+						elementsOnPage,
+						currentPage
+					);
 
-				displayPaginatedItems(
-					catBoxArray,
-					catsBox,
-					elementsOnPage,
-					currentPage
-				);
+					let activeBtnDog = document.querySelector(
+						'#dogs .pagination-btn.active'
+					);
 
-				let activeBtnDog = document.querySelector(
-					'#dogs .pagination-btn.active'
-				);
-				let activeBtnCat = document.querySelector(
-					'#cats .pagination-btn.active'
-				);
-
-				console.log(activeBtnDog);
-				if (activeBtnDog) {
 					activeBtnDog.classList.remove('active');
+
+					button.classList.add('active');
 				}
 
-				if (activeBtnCat) {
+				if (button.parentElement == paginationElCats) {
+					displayPaginatedItems(
+						catBoxArray,
+						catsBox,
+						elementsOnPage,
+						currentPage
+					);
+
+					let activeBtnCat = document.querySelector(
+						'#cats .pagination-btn.active'
+					);
+
 					activeBtnCat.classList.remove('active');
-				}
 
-				button.classList.add('active');
+					button.classList.add('active');
+				}
 			});
 
 			return button;
