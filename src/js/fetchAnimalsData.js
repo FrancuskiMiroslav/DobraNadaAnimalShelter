@@ -275,21 +275,21 @@ document.addEventListener('DOMContentLoaded', function () {
 			let pageCount = Math.ceil(items.length / itemsPerPage);
 
 			for (let i = 1; i < pageCount + 1; i++) {
-				let btn = paginationButton(i);
+				let btn = paginationButton(i, pageCount);
 
 				wrapper.appendChild(btn);
 			}
 
-			let nextBtn = nextPage();
+			let nextBtn = nextPage(pageCount);
 			wrapper.appendChild(nextBtn);
 
-			let prevBtn = prevPage();
+			let prevBtn = prevPage(pageCount);
 			wrapper.prepend(prevBtn);
 		}
 
-		function nextPage(page) {
+		function nextPage(pageCount) {
 			let nextBtn = document.createElement('button');
-			nextBtn.id = 'next';
+			nextBtn.classList.add('next');
 			nextBtn.innerText = '>';
 			nextBtn.classList.add('pagination-btn');
 
@@ -307,6 +307,18 @@ document.addEventListener('DOMContentLoaded', function () {
 					);
 
 					activeBtnDog.nextElementSibling.click();
+
+					if (currentPage === pageCount) {
+						nextBtn.style.opacity = '0.5';
+						nextBtn.style.pointerEvents = 'none';
+					}
+
+					let prevBtn = document.querySelector('#dogs .prev');
+
+					if (currentPage !== 1) {
+						prevBtn.style.opacity = '1';
+						prevBtn.style.pointerEvents = 'all';
+					}
 				}
 
 				if (nextBtn.parentElement == paginationElCats) {
@@ -322,15 +334,27 @@ document.addEventListener('DOMContentLoaded', function () {
 					);
 
 					activeBtnCat.nextElementSibling.click();
+
+					if (currentPage === pageCount) {
+						nextBtn.style.opacity = '0.5';
+						nextBtn.style.pointerEvents = 'none';
+					}
+
+					let prevBtn = document.querySelector('#cats .prev');
+
+					if (currentPage !== 1) {
+						prevBtn.style.opacity = '1';
+						prevBtn.style.pointerEvents = 'all';
+					}
 				}
 			});
 
 			return nextBtn;
 		}
 
-		function prevPage(page) {
+		function prevPage(pageCount) {
 			let prevBtn = document.createElement('button');
-			prevBtn.id = 'prev';
+			prevBtn.classList.add('prev');
 			prevBtn.innerText = '<';
 			prevBtn.classList.add('pagination-btn');
 
@@ -348,6 +372,18 @@ document.addEventListener('DOMContentLoaded', function () {
 					);
 
 					activeBtnDog.previousElementSibling.click();
+
+					let nextBtn = document.querySelector('#dogs .next');
+
+					if (currentPage !== pageCount) {
+						nextBtn.style.opacity = '1';
+						nextBtn.style.pointerEvents = 'all';
+					}
+
+					if (currentPage === 1) {
+						prevBtn.style.opacity = '0.5';
+						prevBtn.style.pointerEvents = 'none';
+					}
 				}
 
 				if (prevBtn.parentElement == paginationElCats) {
@@ -363,13 +399,30 @@ document.addEventListener('DOMContentLoaded', function () {
 					);
 
 					activeBtnCat.previousElementSibling.click();
+
+					let nextBtn = document.querySelector('#cats .next');
+
+					if (currentPage !== pageCount) {
+						nextBtn.style.opacity = '1';
+						nextBtn.style.pointerEvents = 'all';
+					}
+
+					if (currentPage === 1) {
+						prevBtn.style.opacity = '0.5';
+						prevBtn.style.pointerEvents = 'none';
+					}
 				}
 			});
+
+			if (currentPage === 1) {
+				prevBtn.style.opacity = '0.5';
+				prevBtn.style.pointerEvents = 'none';
+			}
 
 			return prevBtn;
 		}
 
-		function paginationButton(page) {
+		function paginationButton(page, pageCount) {
 			let button = document.createElement('button');
 			button.classList.add('pagination-btn');
 			button.innerText = page;
@@ -396,6 +449,26 @@ document.addEventListener('DOMContentLoaded', function () {
 					activeBtnDog.classList.remove('active');
 
 					button.classList.add('active');
+
+					let nextBtn = document.querySelector('#dogs .next');
+
+					if (currentPage === pageCount) {
+						nextBtn.style.opacity = '0.5';
+						nextBtn.style.pointerEvents = 'none';
+					} else {
+						nextBtn.style.opacity = '1';
+						nextBtn.style.pointerEvents = 'all';
+					}
+
+					let prevBtn = document.querySelector('#dogs .prev');
+
+					if (currentPage === 1) {
+						prevBtn.style.opacity = '0.5';
+						prevBtn.style.pointerEvents = 'none';
+					} else {
+						prevBtn.style.opacity = '1';
+						prevBtn.style.pointerEvents = 'all';
+					}
 				}
 
 				if (button.parentElement == paginationElCats) {
@@ -413,6 +486,26 @@ document.addEventListener('DOMContentLoaded', function () {
 					activeBtnCat.classList.remove('active');
 
 					button.classList.add('active');
+
+					let nextBtn = document.querySelector('#cats .next');
+
+					if (currentPage === pageCount) {
+						nextBtn.style.opacity = '0.5';
+						nextBtn.style.pointerEvents = 'none';
+					} else {
+						nextBtn.style.opacity = '1';
+						nextBtn.style.pointerEvents = 'all';
+					}
+
+					let prevBtn = document.querySelector('#cats .prev');
+
+					if (currentPage === 1) {
+						prevBtn.style.opacity = '0.5';
+						prevBtn.style.pointerEvents = 'none';
+					} else {
+						prevBtn.style.opacity = '1';
+						prevBtn.style.pointerEvents = 'all';
+					}
 				}
 			});
 
