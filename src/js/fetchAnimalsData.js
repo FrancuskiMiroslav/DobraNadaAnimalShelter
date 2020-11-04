@@ -277,6 +277,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			for (let i = 1; i < pageCount + 1; i++) {
 				let btn = paginationButton(i, pageCount);
 
+				btn.style.width = '0';
+				btn.style.overflow = 'hidden';
+				btn.style.margin = '0';
+
 				wrapper.appendChild(btn);
 			}
 
@@ -285,6 +289,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			let prevBtn = prevPage(pageCount);
 			wrapper.prepend(prevBtn);
+
+			let currentBtnDogs = document.querySelector(
+				'#dogs .pagination-btn.active'
+			);
+			let currentBtnCats = document.querySelector(
+				'#cats .pagination-btn.active'
+			);
+
+			if (currentBtnDogs && currentBtnCats) {
+				currentBtnDogs.classList.add('group');
+				currentBtnDogs.nextElementSibling.classList.add('group');
+				currentBtnDogs.nextElementSibling.nextElementSibling.classList.add(
+					'group'
+				);
+				currentBtnDogs.previousElementSibling.classList.add('group');
+
+				currentBtnCats.classList.add('group');
+				currentBtnCats.nextElementSibling.classList.add('group');
+				currentBtnCats.nextElementSibling.nextElementSibling.classList.add(
+					'group'
+				);
+				currentBtnCats.previousElementSibling.classList.add('group');
+			}
 		}
 
 		function nextPage(pageCount) {
@@ -319,6 +346,12 @@ document.addEventListener('DOMContentLoaded', function () {
 						prevBtn.style.opacity = '1';
 						prevBtn.style.pointerEvents = 'all';
 					}
+
+					if (activeBtnDog) {
+						activeBtnDog.classList.add('group');
+						activeBtnDog.nextElementSibling.classList.add('group');
+						activeBtnDog.previousElementSibling.classList.add('group');
+					}
 				}
 
 				if (nextBtn.parentElement == paginationElCats) {
@@ -345,6 +378,12 @@ document.addEventListener('DOMContentLoaded', function () {
 					if (currentPage !== 1) {
 						prevBtn.style.opacity = '1';
 						prevBtn.style.pointerEvents = 'all';
+					}
+
+					if (activeBtnCat) {
+						activeBtnCat.classList.add('group');
+						activeBtnCat.nextElementSibling.classList.add('group');
+						activeBtnCat.previousElementSibling.classList.add('group');
 					}
 				}
 			});
@@ -384,6 +423,12 @@ document.addEventListener('DOMContentLoaded', function () {
 						prevBtn.style.opacity = '0.5';
 						prevBtn.style.pointerEvents = 'none';
 					}
+
+					if (activeBtnDog) {
+						activeBtnDog.classList.add('group');
+						activeBtnDog.nextElementSibling.classList.add('group');
+						activeBtnDog.previousElementSibling.classList.add('group');
+					}
 				}
 
 				if (prevBtn.parentElement == paginationElCats) {
@@ -410,6 +455,12 @@ document.addEventListener('DOMContentLoaded', function () {
 					if (currentPage === 1) {
 						prevBtn.style.opacity = '0.5';
 						prevBtn.style.pointerEvents = 'none';
+					}
+
+					if (activeBtnCat) {
+						activeBtnCat.classList.add('group');
+						activeBtnCat.nextElementSibling.classList.add('group');
+						activeBtnCat.previousElementSibling.classList.add('group');
 					}
 				}
 			});

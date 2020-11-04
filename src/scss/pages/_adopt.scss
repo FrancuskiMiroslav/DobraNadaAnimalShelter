@@ -254,6 +254,16 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
+
+			.pagination-btn:nth-last-child(2) {
+				width: 40px !important;
+				margin: 5px !important;
+			}
+
+			.pagination-btn.group {
+				width: 40px !important;
+				margin: 5px !important;
+			}
 		}
 	}
 }
