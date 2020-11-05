@@ -41,11 +41,11 @@ window.addEventListener('DOMContentLoaded', function () {
 			});
 		}
 
-		window.addEventListener('resize', (e) => {
+		/* 	window.addEventListener('resize', (e) => {
 			if (window.innerWidth >= 600) {
 				activateTabs();
 			}
-		});
+		}); */
 	}
 
 	///// accordion
