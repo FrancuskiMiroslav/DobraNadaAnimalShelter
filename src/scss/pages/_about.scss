@@ -16,6 +16,12 @@
 			}
 		}
 
+		&__left-img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
 		&__right {
 			width: 48%;
 			position: relative;
@@ -72,6 +78,16 @@
 		&__title {
 			margin-bottom: 20px;
 		}
+
+		&__text {
+			line-height: 24px;
+
+			br {
+				content: '';
+				margin-bottom: 10px;
+				display: block;
+			}
+		}
 	}
 
 	.cards {
@@ -85,8 +101,10 @@
 
 		&__text {
 			color: rgba($color: $bgClr, $alpha: 0.5);
+			margin: 0 auto;
 			margin-bottom: 30px;
 			padding: 0px 30px;
+			max-width: 600px;
 		}
 
 		&__container {
@@ -154,6 +172,16 @@
 				bottom: 0;
 				width: 100%;
 				left: 0;
+			}
+
+			&__top {
+				height: 300px;
+
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
 			}
 
 			&__bottom {

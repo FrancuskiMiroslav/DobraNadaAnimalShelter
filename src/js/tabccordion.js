@@ -40,12 +40,6 @@ window.addEventListener('DOMContentLoaded', function () {
 				tab.querySelector('.tabccordion__list .tabccordion__btn').click();
 			});
 		}
-
-		/* 	window.addEventListener('resize', (e) => {
-			if (window.innerWidth >= 600) {
-				activateTabs();
-			}
-		}); */
 	}
 
 	///// accordion

@@ -121,7 +121,6 @@ main {
 				position: relative;
 				width: 100%;
 				text-align: center;
-				padding: 15px;
 			}
 
 			&::before {
@@ -153,6 +152,10 @@ main {
 			justify-content: flex-end;
 			align-items: center;
 			padding: 20px;
+
+			@include breakpoint-max(800) {
+				justify-content: center;
+			}
 		}
 	}
 

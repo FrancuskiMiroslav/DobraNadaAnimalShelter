@@ -1,0 +1,7 @@
+.donate {
+	@extend .about;
+
+	.cards__container {
+		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	}
+}

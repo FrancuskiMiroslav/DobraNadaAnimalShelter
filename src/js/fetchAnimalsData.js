@@ -7,7 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	function getAnimalsData() {
 		return new Promise((resolve, reject) => {
 			fetch(animalsUrl)
-				.then((resp) => resp.json())
+				.then((resp) => {
+					if (!resp.ok) {
+						throw Error(`${resp.statusText} - ${resp.url}`);
+					}
+					return resp.json();
+				})
 				.then((data) => resolve(data))
 				.catch((err) => reject(err));
 		});
