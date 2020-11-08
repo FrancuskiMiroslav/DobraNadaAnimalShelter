@@ -73,6 +73,19 @@
 		&__right-content {
 			z-index: 50;
 			padding: 30px;
+
+			.expandMoreContent {
+				max-height: 94px;
+				overflow: hidden;
+				transition: 0.5s ease-in-out all;
+				position: relative;
+			}
+
+			.showMore {
+				@include fluid-typo(375px, 1920px, 8px, 12px);
+				padding: 6px 8px;
+				text-transform: capitalize;
+			}
 		}
 
 		&__title {
