@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function expand() {
 		const showContent = document.getElementById(this.dataset.target);
+
 		if (showContent.classList.contains('active')) {
 			this.innerHTML = this.dataset.showtext;
 		} else {
@@ -28,11 +29,21 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (showContent.classList.contains('active')) {
 			showContent.style.maxHeight = showContent.scrollHeight + 'px';
 		} else {
-			showContent.style.maxHeight = 94 + 'px';
+			showContent.style.maxHeight = `${showContent.scrollHeight * 0.3}px`;
 		}
 	}
 
 	expandsMore.forEach((btn) => {
+		const containerHeight =
+			btn.parentElement.previousElementSibling.offsetHeight;
+
+		const expandElementHeight =
+			btn.parentElement.previousElementSibling.firstElementChild.offsetHeight;
+
+		if (containerHeight >= expandElementHeight) {
+			btn.style.visibility = 'hidden';
+			btn.style.height = 0;
+		}
 		btn.addEventListener('click', expand);
 	});
 });

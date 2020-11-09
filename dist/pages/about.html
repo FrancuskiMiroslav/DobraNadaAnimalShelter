@@ -9,7 +9,7 @@
 		/>
 		<meta name="author" content="Francuski Miroslav" />
 		<meta name="description" content="Animal Shelter" />
-		<title>O nama</title>
+		<title>About Us</title>
 		<link
 			rel="icon"
 			href="../assets/images/favicon.png"
@@ -49,21 +49,23 @@
 
 					<ul class="nav__list" id="nav-list">
 						<li class="nav__list-item">
-							<a href="../index.html" class="header__nav-list-link">Naslovna</a>
+							<a href="../index.html" class="header__nav-list-link">Home</a>
 						</li>
 						<li class="nav__list-item current">
-							<a href="#" class="header__nav-list-link">O nama</a>
+							<a href="#" class="header__nav-list-link">About Us</a>
 						</li>
 						<li class="nav__list-item">
-							<a href="adopt.html" class="header__nav-list-link">Udomi</a>
+							<a href="adopt.html" class="header__nav-list-link">Adopt</a>
 						</li>
 						<li class="nav__list-item">
 							<a href="donate.html" class="header__nav-list-link"
-								>Doniraj/Volontiraj</a
+								>Donate/Volunteer</a
 							>
 						</li>
 						<li class="nav__list-item">
-							<a href="contact.html" class="header__nav-list-link">Kontakt</a>
+							<a href="contact.html" class="header__nav-list-link"
+								>Contact Us</a
+							>
 						</li>
 
 						<ul class="nav__social-icons">
@@ -88,16 +90,16 @@
 						</ul>
 					</ul>
 
-					<button class="nav__donate-btn button">Doniraj</button>
+					<button class="nav__donate-btn button">Donate</button>
 				</div>
 			</nav>
 
 			<section class="hero">
 				<div class="hero__inner">
-					<h1 class="hero__title">O nama</h1>
+					<h1 class="hero__title">About Us</h1>
 					<ul class="breadcrumb">
-						<li class="nav__list-item"><a href="../index.html">Naslovna</a></li>
-						<li class="nav__list-item current"><a href="#">O nama</a></li>
+						<li class="nav__list-item"><a href="../index.html">Home</a></li>
+						<li class="nav__list-item current"><a href="#">About Us</a></li>
 					</ul>
 				</div>
 			</section>
@@ -187,7 +189,7 @@
 				</div>
 				<div class="info__right">
 					<div class="info__right-content">
-						<h2 class="info__title">Šta je naš zadatak</h2>
+						<h2 class="info__title">What we do</h2>
 						<div class="expandMoreContent" id="showMore-ourGoal">
 							<p class="info__text">
 								Our story The story of ''Dobra Nada'' started over 20 years ago
@@ -251,7 +253,7 @@
 			</section>
 
 			<section class="cards">
-				<h2 class="cards__title">Naši ljudi</h2>
+				<h2 class="cards__title">Our people</h2>
 				<p class="cards__text">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
 					praesentium.
@@ -269,10 +271,24 @@
 						<div class="card__bottom">
 							<h3 class="card__title">Ime i prezime</h3>
 							<h4 class="card__sub-title">Zaduženje</h4>
-							<p class="card__desc">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
-								cumque quaerat aspernatur laudantium quam eligendi?
-							</p>
+							<div class="expandMoreContent" id="showMore-card1">
+								<p class="card__desc">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Esse, cumque quaerat aspernatur laudantium quam eligendi?
+								</p>
+							</div>
+
+							<div class="expandMoreHolder">
+								<button
+									expand-more
+									data-hidetext="...Read less"
+									data-showtext="...Read more"
+									data-target="showMore-card1"
+									class="button showMore"
+								>
+									...Read more
+								</button>
+							</div>
 						</div>
 					</div>
 
@@ -287,10 +303,26 @@
 						<div class="card__bottom">
 							<h3 class="card__title">Ime i prezime</h3>
 							<h4 class="card__sub-title">Zaduženje</h4>
-							<p class="card__desc">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
-								cumque quaerat aspernatur laudantium quam eligendi?
-							</p>
+							<div class="expandMoreContent" id="showMore-card2">
+								<p class="card__desc">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Esse, cumque quaerat aspernatur laudantium quam eligendi?
+									Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Laborum, voluptatibus!
+								</p>
+							</div>
+
+							<div class="expandMoreHolder">
+								<button
+									expand-more
+									data-hidetext="...Read less"
+									data-showtext="...Read more"
+									data-target="showMore-card2"
+									class="button showMore"
+								>
+									...Read more
+								</button>
+							</div>
 						</div>
 					</div>
 
@@ -379,7 +411,7 @@
 						lives!
 					</p>
 
-					<button class="hero__btn button">Doniraj</button>
+					<button class="hero__btn button">Donate now</button>
 				</div>
 			</section>
 		</main>
@@ -387,30 +419,32 @@
 		<footer class="footer">
 			<nav class="footer__nav">
 				<div class="footer__nav-links">
-					<h3 class="footer__nav-title">Linkovi</h3>
+					<h3 class="footer__nav-title">Links</h3>
 					<ul class="footer__nav-list">
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="../index.html" class="footer__nav-list-link">Naslovna</a>
+							<a href="../index.html" class="footer__nav-list-link">Home</a>
 						</li>
 						<li class="footer__nav-list-item nav__list-item current">
-							<a href="#" class="footer__nav-list-link">O nama</a>
+							<a href="#" class="footer__nav-list-link">About Us</a>
 						</li>
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="adopt.html" class="footer__nav-list-link">Udomi</a>
+							<a href="adopt.html" class="footer__nav-list-link">Adopt</a>
 						</li>
 						<li class="footer__nav-list-item nav__list-item">
 							<a href="donate.html" class="footer__nav-list-link"
-								>Doniraj/Volontiraj</a
+								>Donate/Volunteer</a
 							>
 						</li>
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="contact.html" class="footer__nav-list-link">Kontakt</a>
+							<a href="contact.html" class="footer__nav-list-link"
+								>Contact Us</a
+							>
 						</li>
 					</ul>
 				</div>
 
 				<div class="footer__sponsors">
-					<h3 class="footer__nav-title">Sponzori</h3>
+					<h3 class="footer__nav-title">Sponsors</h3>
 					<ul class="footer__nav-list">
 						<li class="footer__nav-list-item nav__list-item">
 							<a href="#" class="footer__nav-list-link">Sponzor1</a>
@@ -428,7 +462,7 @@
 				</div>
 
 				<div class="footer__social-links">
-					<h3 class="footer__nav-title">Društvene mreže</h3>
+					<h3 class="footer__nav-title">Social media</h3>
 					<ul class="footer__nav-list">
 						<li class="footer__nav-list-item nav__list-item">
 							<a

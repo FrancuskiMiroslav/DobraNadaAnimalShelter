@@ -9,7 +9,7 @@
 		/>
 		<meta name="author" content="Francuski Miroslav" />
 		<meta name="description" content="Animal Shelter" />
-		<title>Doniraj/Volontiraj</title>
+		<title>Donate/Volunteer</title>
 		<link
 			rel="icon"
 			href="../assets/images/favicon.png"
@@ -49,19 +49,21 @@
 
 					<ul class="nav__list" id="nav-list">
 						<li class="nav__list-item">
-							<a href="../index.html" class="header__nav-list-link">Naslovna</a>
+							<a href="../index.html" class="header__nav-list-link">Home</a>
 						</li>
 						<li class="nav__list-item">
-							<a href="about.html" class="header__nav-list-link">O nama</a>
+							<a href="about.html" class="header__nav-list-link">About Us</a>
 						</li>
 						<li class="nav__list-item">
-							<a href="adopt.html" class="header__nav-list-link">Udomi</a>
+							<a href="adopt.html" class="header__nav-list-link">Adopt</a>
 						</li>
 						<li class="nav__list-item current">
-							<a href="#" class="header__nav-list-link">Doniraj/Volontiraj</a>
+							<a href="#" class="header__nav-list-link">Donate/Volunteer</a>
 						</li>
 						<li class="nav__list-item">
-							<a href="contact.html" class="header__nav-list-link">Kontakt</a>
+							<a href="contact.html" class="header__nav-list-link"
+								>Contact Us</a
+							>
 						</li>
 
 						<ul class="nav__social-icons">
@@ -86,7 +88,7 @@
 						</ul>
 					</ul>
 
-					<button class="nav__donate-btn button">Doniraj</button>
+					<button class="nav__donate-btn button">Donate</button>
 				</div>
 			</nav>
 
@@ -94,9 +96,9 @@
 				<div class="hero__inner">
 					<h1 class="hero__title">Donate</h1>
 					<ul class="breadcrumb">
-						<li class="nav__list-item"><a href="../index.html">Naslovna</a></li>
+						<li class="nav__list-item"><a href="../index.html">Home</a></li>
 						<li class="nav__list-item current">
-							<a href="#">Doniraj/Volontiraj</a>
+							<a href="#">Donate/Volunteer</a>
 						</li>
 					</ul>
 				</div>
@@ -115,11 +117,64 @@
 				<div class="info__right">
 					<div class="info__right-content">
 						<h2 class="info__title">Food: wet or dry</h2>
-						<p class="info__text">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
-							impedit odio explicabo odit dolore, cumque veniam dolores
-							consequuntur quod quas.
-						</p>
+						<div class="expandMoreContent" id="showMore-food">
+							<p class="info__text">
+								Our story The story of ''Dobra Nada'' started over 20 years ago
+								when 2 people, Laslo and Snezana, physical therapists and
+								colleagues, started helping stray cats and dogs in Novi Sad
+								(Serbia). As time passed by, the number of animals in their care
+								went up and so they started a private shelter. The two of them
+								invested a lot of time, love, dedication and their own finances
+								into animal rescue. In over 20 years they faced many hardships
+								and difficult decisions ...because running a non-profit
+								organisation on your own, and especially so in Serbia, stands
+								low chances of surviving. Despite all of this, quitting their
+								rescue work was never an option for them, and neither was
+								turning their backs on an animal in need.
+								<br />
+
+								Mr. Laslo Boka was a renowned shiatsu therapist, chiropractor,
+								and Reiki master. He was very dedicated to his work, and as much
+								as he was passionate about helping people, he was equally
+								passionate about helping animals too. The cats and dogs he took
+								care of were like a second family to him.
+								<br />
+								Sadly, Laslo passed away in August 2020 , and now his friend
+								Snezana is left alone with nearly 90 animals. There are
+								currently 66 dogs and 18 cats at the shelter. <br />
+								That is too big of a workload and an overwhelming number of
+								animals for just one person. <br />
+								For this reason Snezana, with the help of few friends , is now
+								actively working on rehoming dogs and cats from the shelter.
+								Rehoming in itself is a process that will likely take a while
+								...That is why help is needed to keep the shelter operating.
+								What is needed the most is help in animal food and money for
+								covering other expenses (transport and vet expenses above all).
+								<br />
+								Monthly food needs are 750 kilos of dry dog food , 270 cans of
+								cat food and 60 kilos of dry cat food. This is why we ask all
+								people who like animals to please help Snezana and the paws she
+								takes care of.
+								<br />
+
+								Please help Snezana to continue Laslo's work and to keep the
+								memory of Laslo's noble mission alive , and help paws to stay
+								safe and fed until they find their safe and loving forever homes
+								they so much deserve.
+							</p>
+						</div>
+
+						<div class="expandMoreHolder">
+							<button
+								expand-more
+								data-hidetext="...Read less"
+								data-showtext="...Read more"
+								data-target="showMore-food"
+								class="button showMore"
+							>
+								...Read more
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -135,26 +190,41 @@
 				<div class="info__right">
 					<div class="info__right-content">
 						<h2 class="info__title">Donate to our wish list</h2>
-						<ul class="info__list">
-							<li class="info__list-item">
-								<p class="info__text">Lorem ipsum dolor sit amet.</p>
-							</li>
-							<li class="info__list-item">
-								<p class="info__text">Lorem ipsum dolor sit amet.</p>
-							</li>
-							<li class="info__list-item">
-								<p class="info__text">Lorem ipsum dolor sit amet.</p>
-							</li>
-							<li class="info__list-item">
-								<p class="info__text">Lorem ipsum dolor sit amet.</p>
-							</li>
-							<li class="info__list-item">
-								<p class="info__text">Lorem ipsum dolor sit amet.</p>
-							</li>
-							<li class="info__list-item">
-								<p class="info__text">Lorem ipsum dolor sit amet.</p>
-							</li>
-						</ul>
+
+						<div class="expandMoreContent" id="showMore-ourStory">
+							<ul class="info__list">
+								<li class="info__list-item">
+									<p class="info__text">Lorem ipsum dolor sit amet.</p>
+								</li>
+								<li class="info__list-item">
+									<p class="info__text">Lorem ipsum dolor sit amet.</p>
+								</li>
+								<li class="info__list-item">
+									<p class="info__text">Lorem ipsum dolor sit amet.</p>
+								</li>
+								<li class="info__list-item">
+									<p class="info__text">Lorem ipsum dolor sit amet.</p>
+								</li>
+								<li class="info__list-item">
+									<p class="info__text">Lorem ipsum dolor sit amet.</p>
+								</li>
+								<li class="info__list-item">
+									<p class="info__text">Lorem ipsum dolor sit amet.</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="expandMoreHolder">
+							<button
+								expand-more
+								data-hidetext="...Read less"
+								data-showtext="...Read more"
+								data-target="showMore-ourStory"
+								class="button showMore"
+							>
+								...Read more
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -248,7 +318,7 @@
 			<section class="hero hero__footer">
 				<div class="hero__inner">
 					<h2 class="hero__title">
-						HELP THE ANIMAL SHELTER PUT A STOP TO CRUELTY
+						Help the Animal Shelter Put a Stop To Cruelty
 					</h2>
 					<p class="hero__desc">
 						You are the only hope of thousands of homeless cats, dogs, and other
@@ -256,7 +326,7 @@
 						lives!
 					</p>
 
-					<button class="hero__btn button">Doniraj</button>
+					<button class="hero__btn button">Donate</button>
 				</div>
 			</section>
 		</main>
@@ -264,28 +334,30 @@
 		<footer class="footer">
 			<nav class="footer__nav">
 				<div class="footer__nav-links">
-					<h3 class="footer__nav-title">Linkovi</h3>
+					<h3 class="footer__nav-title">Links</h3>
 					<ul class="footer__nav-list">
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="../index.html" class="footer__nav-list-link">Naslovna</a>
+							<a href="../index.html" class="footer__nav-list-link">Home</a>
 						</li>
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="about.html" class="footer__nav-list-link">O nama</a>
+							<a href="about.html" class="footer__nav-list-link">About Us</a>
 						</li>
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="adopt.html" class="footer__nav-list-link">Udomi</a>
+							<a href="adopt.html" class="footer__nav-list-link">Adopt</a>
 						</li>
 						<li class="footer__nav-list-item nav__list-item current">
-							<a href="#" class="footer__nav-list-link">Doniraj/Volontiraj</a>
+							<a href="#" class="footer__nav-list-link">Donate/Volunteer</a>
 						</li>
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="contact.html" class="footer__nav-list-link">Kontakt</a>
+							<a href="contact.html" class="footer__nav-list-link"
+								>Contact Us</a
+							>
 						</li>
 					</ul>
 				</div>
 
 				<div class="footer__sponsors">
-					<h3 class="footer__nav-title">Sponzori</h3>
+					<h3 class="footer__nav-title">Sponsors</h3>
 					<ul class="footer__nav-list">
 						<li class="footer__nav-list-item nav__list-item">
 							<a href="#" class="footer__nav-list-link">Sponzor1</a>
@@ -303,7 +375,7 @@
 				</div>
 
 				<div class="footer__social-links">
-					<h3 class="footer__nav-title">Društvene mreže</h3>
+					<h3 class="footer__nav-title">Social media</h3>
 					<ul class="footer__nav-list">
 						<li class="footer__nav-list-item nav__list-item">
 							<a

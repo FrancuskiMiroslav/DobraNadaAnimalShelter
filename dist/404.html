@@ -9,14 +9,14 @@
 		/>
 		<meta name="author" content="Francuski Miroslav" />
 		<meta name="description" content="Animal Shelter" />
-		<title>Adopt</title>
+		<title>Error 404</title>
 		<link
 			rel="icon"
-			href="../assets/images/favicon.png"
+			href="assets/images/favicon.png"
 			type="image/svg+xml"
 			sizes="16x16"
 		/>
-		<link rel="stylesheet" href="../app.css" />
+		<link rel="stylesheet" href="app.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -33,9 +33,9 @@
 		<header class="header">
 			<nav class="nav" id="nav-container">
 				<div class="nav__logo">
-					<a href="../index.html" class="nav__logo-link">
+					<a href="index.html" class="nav__logo-link">
 						<img
-							src="../assets/images/logo.png"
+							src="assets/images/logo.png"
 							alt="animal-shelter_logo"
 							class="nav__img"
 						/>
@@ -49,22 +49,24 @@
 
 					<ul class="nav__list" id="nav-list">
 						<li class="nav__list-item">
-							<a href="../index.html" class="header__nav-list-link">Home</a>
+							<a href="index.html" class="header__nav-list-link">Home</a>
 						</li>
 						<li class="nav__list-item">
-							<a href="about.html" class="header__nav-list-link">About Us</a>
-						</li>
-						<li class="nav__list-item current">
-							<a href="#" class="header__nav-list-link">Adopt</a>
+							<a href="pages/about.html" class="header__nav-list-link"
+								>About Us</a
+							>
 						</li>
 						<li class="nav__list-item">
-							<a href="donate.html" class="header__nav-list-link"
+							<a href="pages/adopt.html" class="header__nav-list-link">Adopt</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="pages/donate.html" class="header__nav-list-link"
 								>Donate/Volunteer</a
 							>
 						</li>
 						<li class="nav__list-item">
-							<a href="contact.html" class="header__nav-list-link"
-								>Contact Us</a
+							<a href="pages/contact.html" class="header__nav-list-link"
+								>Contact us</a
 							>
 						</li>
 
@@ -96,88 +98,23 @@
 
 			<section class="hero">
 				<div class="hero__inner">
-					<h1 class="hero__title">Adopt</h1>
+					<h1 class="hero__title">Error 404</h1>
 					<ul class="breadcrumb">
-						<li class="nav__list-item"><a href="../index.html">Home</a></li>
-						<li class="nav__list-item current"><a href="#">Adopt</a></li>
+						<li class="nav__list-item"><a href="index.html">Go back</a></li>
+						<li class="nav__list-item current">
+							<a href="#">Error 404</a>
+						</li>
 					</ul>
+
+					<h3 class="hero__message">
+						Oops something went wrong
+						<span class="hero__thank">please click go back</span>
+					</h3>
 				</div>
 			</section>
 		</header>
 
-		<main class="adopt">
-			<div class="adopt__inner-wrap">
-				<header class="adopt__header">
-					<div class="page-header active" data-header="1">
-						<h3 class="adopt__title">adopt a dog in novi sad</h3>
-						<p class="adopt__text">
-							Looking for a true friend for you, your children or your family?
-							Consider adopting a dog from Animal Shelter today!
-						</p>
-					</div>
-
-					<div class="page-header" data-header="2">
-						<h3 class="adopt__title">one of these cats may become yours</h3>
-						<p class="adopt__text">
-							From spunky to docile and cuddly to independent, Animal Shelter
-							has dozens of kittens and cats waiting for their forever homes.
-							Take a look and see which one is right for you!
-						</p>
-					</div>
-				</header>
-
-				<div class="adopt__main-content">
-					<aside class="adopt__content-switch">
-						<nav class="adopt__nav">
-							<ul class="adopt__nav-list">
-								<li class="adopt__list-item active">
-									<button class="button">
-										<a href="#dog" data-switcher data-tab="1">Adopt dogs</a>
-									</button>
-								</li>
-								<li class="adopt__list-item">
-									<button class="button">
-										<a href="#cat" data-switcher data-tab="2">Adopt cats</a>
-									</button>
-								</li>
-							</ul>
-						</nav>
-					</aside>
-
-					<section class="adopt__pages" id="animals-pages">
-						<div class="page active" data-page="1" id="dogs" data-hash="dogs">
-							<h3 class="page__title">Our Featured Dogs</h3>
-							<p class="page__text">
-								At Animal Shelter, we have a variety of dogs ready to be adopted
-								today! They will be glad to become your best friends.Check out
-								this list of featured dogs looking for good homes. You can also
-								perform a search by zip code to meet available dogs in your
-								area! If you live in New York City, don't forget to check out
-								the dogs available at Animal Shelter.
-							</p>
-
-							<div class="page__boxes" id="dogs-box"></div>
-							<div class="page__numbers" id="dogs-pagination"></div>
-						</div>
-
-						<div class="page" data-page="2" id="cats" data-hash="cats">
-							<h3 class="page__title">Bring a New Cat Home</h3>
-							<p class="page__text">
-								Choosing to adopt a cat or kitten is an exciting time. Even
-								though there are many things to consider before adopting a pet,
-								a cat from Animal Shelter can easily become a new member of your
-								family and what’s more important find a loving family and home.
-								Here are the cats and kittens we are glad to offer you for
-								adoption.
-							</p>
-
-							<div class="page__boxes" id="cats-box"></div>
-							<div class="page__numbers" id="cats-pagination"></div>
-						</div>
-					</section>
-				</div>
-			</div>
-		</main>
+		<main class="success"></main>
 
 		<footer class="footer">
 			<nav class="footer__nav">
@@ -185,21 +122,23 @@
 					<h3 class="footer__nav-title">Links</h3>
 					<ul class="footer__nav-list">
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="../index.html" class="footer__nav-list-link">Home</a>
+							<a href="index.html" class="footer__nav-list-link">Home</a>
 						</li>
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="about.html" class="footer__nav-list-link">About Us</a>
-						</li>
-						<li class="footer__nav-list-item nav__list-item current">
-							<a href="#" class="footer__nav-list-link">Adopt</a>
-						</li>
-						<li class="footer__nav-list-item nav__list-item">
-							<a href="donate.html" class="footer__nav-list-link"
-								>Donate/Volunteer</a
+							<a href="pages/about.html" class="footer__nav-list-link"
+								>About Us</a
 							>
 						</li>
 						<li class="footer__nav-list-item nav__list-item">
-							<a href="contact.html" class="footer__nav-list-link"
+							<a href="pages/adopt.html" class="footer__nav-list-link">Adopt</a>
+						</li>
+						<li class="footer__nav-list-item nav__list-item">
+							<a href="pages/donate.html" class="footer__nav-list-link"
+								>Donate/Volunteer</a
+							>
+						</li>
+						<li class="footer__nav-list-item nav__list-item current">
+							<a href="pages/contact.html" class="footer__nav-list-link"
 								>Contact Us</a
 							>
 						</li>
@@ -264,6 +203,6 @@
 			</nav>
 		</footer>
 
-		<script src="../app.js"></script>
+		<script src="app.js"></script>
 	</body>
 </html>
