@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (showContent.classList.contains('active')) {
 			showContent.style.maxHeight = showContent.scrollHeight + 'px';
 		} else {
-			showContent.style.maxHeight = `${showContent.scrollHeight * 0.3}px`;
+			showContent.style.maxHeight = `22px`;
 		}
 	}
 

@@ -1,7 +1,10 @@
-.donate {
-	@extend .about;
+#donatePage {
+	.hero {
+		background-image: url(./assets/images/heroDonate.jpg);
+		background-position: bottom;
+	}
 
-	.cards__container {
-		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	.donate {
+		@extend .about;
 	}
 }
