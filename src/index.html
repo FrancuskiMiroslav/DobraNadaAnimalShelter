@@ -30,6 +30,31 @@
 		<button class="button scrollTopBtn" id="btnScrollToTop">
 			<i class="fas fa-arrow-alt-circle-up"></i>
 		</button>
+
+		<!-- Modal -->
+		<div class="modal-container" id="modal">
+			<div class="modal">
+				<button class="close-btn" id="close">
+					<i class="fas fa-times"></i>
+				</button>
+				<div class="modal__img">
+					<img
+						src="https://source.unsplash.com/1600x900/?animal,shelter"
+						alt="animal shelter"
+					/>
+				</div>
+
+				<div class="modal__content">
+					<div class="modal__header">
+						<h3 class="modal__title">Popup header</h3>
+					</div>
+					<div class="modal__body">
+						<p class="modal__text">popup text</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<header class="header">
 			<nav class="nav" id="nav-container">
 				<div class="nav__logo">
@@ -94,7 +119,7 @@
 						</ul>
 					</ul>
 
-					<button class="nav__donate-btn button">Donate</button>
+					<button class="nav__donate-btn button modal-btn">Donate</button>
 				</div>
 			</nav>
 
@@ -276,7 +301,7 @@
 					<div class="grid__item">
 						<h2 class="grid__title">ADOPT</h2>
 						<h3 class="grid__sub-title">Don't buy</h3>
-						<button class="button grid__btn">Donate</button>
+						<button class="button grid__btn modal-btn">Donate</button>
 					</div>
 				</div>
 			</section>

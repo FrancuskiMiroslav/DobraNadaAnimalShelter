@@ -32,9 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 						<div class="carousel__content">
 							<h1 class="carousel__title">${slide.title}</h1>
 							<p class="carousel__desc">${slide.content}</p>
-							<button class="header__nav-donate-btn button">
-								Dugme za nešto
-							</button>
 						</div>
 			`;
 
