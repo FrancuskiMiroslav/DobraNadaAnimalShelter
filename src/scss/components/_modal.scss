@@ -23,9 +23,9 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 500px;
+	width: 70%;
 	max-width: 100%;
-	height: 40%;
+	height: 60%;
 	max-height: 100%;
 	animation-name: modalopen;
 	animation-duration: 1s;
@@ -38,6 +38,7 @@
 		img {
 			height: 100%;
 			object-fit: cover;
+			object-position: right;
 		}
 	}
 
@@ -45,8 +46,47 @@
 		color: #fff;
 	}
 
-	&__content {
-		padding: 20px;
+	table {
+		font-size: 8pt;
+		table-layout: auto;
+		width: 100%;
+	}
+
+	.form-ff {
+		border: 1pt solid $primaryClr;
+		font-weight: 700;
+		font-size: 12pt;
+		text-align: center;
+		font-family: monospace;
+		height: 24pt;
+	}
+
+	.form-ff-title {
+		text-align: right;
+		font-weight: 700;
+		font-size: 12pt;
+	}
+
+	.form-table {
+		border: 1pt solid black;
+		height: 99mm;
+		width: 100%;
+	}
+
+	.paypal {
+		height: 40px;
+
+		&__text {
+			font-size: 16px;
+		}
+	}
+
+	.payClr {
+		fill: $primaryClr;
+	}
+
+	.palClr {
+		fill: $secondaryClr;
 	}
 }
 
