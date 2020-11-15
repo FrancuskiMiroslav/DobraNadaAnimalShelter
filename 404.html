@@ -9,22 +9,24 @@
 		/>
 		<meta name="author" content="Francuski Miroslav" />
 		<meta name="description" content="Animal Shelter" />
-		<title>Error 404</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="app.css" />
 		<link
 			rel="icon"
 			href="./assets/images/svg/pet-house.svg"
 			type="image/svg+xml"
 			sizes="16x16"
 		/>
-		<link rel="stylesheet" href="app.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-		/>
+		<title>Error 404</title>
 	</head>
 	<body>
 		<div class="preload">
-			<img src="../assets/images/loading(1).gif" alt="loading-image" />
+			<img src="./assets/images/loading(1).gif" alt="loading-image" />
 		</div>
 
 		<button class="button scrollTopBtn" id="btnScrollToTop">
@@ -100,7 +102,7 @@
 				<div class="hero__inner">
 					<h1 class="hero__title">Error 404</h1>
 					<ul class="breadcrumb">
-						<li class="nav__list-item"><a href="index.html">Go back</a></li>
+						<li class="nav__list-item"><a onclick="goBack()">Go back</a></li>
 						<li class="nav__list-item current">
 							<a href="#">Error 404</a>
 						</li>
@@ -188,9 +190,9 @@
 				</div>
 
 				<div class="footer__copyright">
-					<a href="../index.html" class="footer__copyright-link">
+					<a href="index.html" class="footer__copyright-link">
 						<img
-							src="../assets/images/logo.png"
+							src="./assets/images/logo.png"
 							alt="logo Dobra Nada"
 							class="footer__copyright-img"
 						/>
@@ -226,7 +228,11 @@
 				</div>
 			</div>
 		</div>
-
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 		<script src="app.js"></script>
 	</body>
 </html>
