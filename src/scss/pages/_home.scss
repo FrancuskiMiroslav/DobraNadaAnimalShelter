@@ -46,9 +46,23 @@ main {
 	}
 
 	&:hover {
-		transform: translateX(0);
+		transform: translateX(7%);
 		.teamingLink {
 			opacity: 1;
+			visibility: visible;
+			width: 423px;
+		}
+	}
+
+	@include breakpoint-max(425) {
+		&:hover {
+			transform: translateX(0%);
+			.teamingLink {
+				opacity: 1;
+				visibility: visible;
+				width: 320px;
+				height: 250px;
+			}
 		}
 	}
 
@@ -72,6 +86,8 @@ main {
 	.teamingLink {
 		transition: 0.5s all;
 		opacity: 0;
+		visibility: hidden;
+		width: 0;
 	}
 }
 
