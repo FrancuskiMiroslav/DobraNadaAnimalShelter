@@ -32,65 +32,6 @@ main {
 	background-color: rgba($color: $bgClr, $alpha: 0.06);
 }
 
-.iframe-container {
-	position: fixed;
-	overflow: visible;
-	right: 0px;
-	top: 95px;
-	z-index: 5000;
-	transform: translateX(100%);
-	transition: 0.5s all ease-in-out;
-
-	@include breakpoint-max(600) {
-		top: 80px;
-	}
-
-	&:hover {
-		transform: translateX(7%);
-		.teamingLink {
-			opacity: 1;
-			visibility: visible;
-			width: 423px;
-		}
-	}
-
-	@include breakpoint-max(425) {
-		&:hover {
-			transform: translateX(0%);
-			.teamingLink {
-				opacity: 1;
-				visibility: visible;
-				width: 320px;
-				height: 250px;
-			}
-		}
-	}
-
-	&:before {
-		position: absolute;
-		left: 0;
-		top: 0;
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 900;
-		content: '\f337';
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 30px;
-		height: 150px;
-		background-color: $secondaryClr;
-		transform: translateX(-30px);
-		cursor: pointer;
-	}
-
-	.teamingLink {
-		transition: 0.5s all;
-		opacity: 0;
-		visibility: hidden;
-		width: 0;
-	}
-}
-
 .home-main {
 	.boxes {
 		&__inner-wrap {
