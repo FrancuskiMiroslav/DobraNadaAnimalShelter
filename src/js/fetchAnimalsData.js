@@ -47,10 +47,27 @@ document.addEventListener('DOMContentLoaded', function () {
 			catsArray = animal.cats;
 
 			dogsArray.forEach((dog) => {
+				const {
+					number,
+					species,
+					breed,
+					color,
+					weight,
+					height,
+					coat,
+					birth,
+					name,
+					gender,
+					image,
+					desc,
+					adopted,
+				} = dog;
+
 				dogBox = document.createElement('div');
 				dogBox.classList.add('page__box');
+				adopted === 'yes' ? dogBox.classList.add('adopted') : '';
 
-				const dogYears = dog.birth;
+				const dogYears = birth;
 
 				const milisecsBetweenDOBand1970 = Date.parse(dogYears);
 				const milisecsBetweenNOWand1970 = Date.now();
@@ -68,18 +85,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 				dogBox.innerHTML = `
                         <div class="page__box-top">
-                            <img src=".${dog.image}" alt="${dog.name} ${
-					dog.species
-				}"}/>
+                            <img src=".${image}" alt="${name} ${species}"}/>
                         </div>
                         <div class="page__box-bottom">
-                            <h3 class="page__box-title">${dog.name}</h3>
+                            <h3 class="page__box-title">${name}${
+					adopted === 'yes' ? ` - <span>adopted</span>` : ''
+				}</h3>
                             <div class="page__box-content">
-                                <div class="expandMoreContent" id="showMore-${
-																	dog.species
-																}${dog.number}">
+                                <div class="expandMoreContent" id="showMore-${species}${number}">
                                     <p class="page__box-text">
-                                        ${dog.desc}
+                                        ${desc}
                                     </p>
                                 </div>
     
@@ -88,9 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         expand-more
                                         data-hidetext="...Read less"
                                         data-showtext="...Read more"
-                                        data-target="showMore-${dog.species}${
-					dog.number
-				}"
+                                        data-target="showMore-${species}${number}"
                                         class="button showMore"
                                     >
                                         ...Read more
@@ -101,15 +114,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             <ul class="page__box-icons">
                                 <li class="page__box-icon">
                                     <i class="fas fa-weight"></i
-                                    ><span class="page__box-icon--text">${
-																			dog.weight
-																		} kg</span>
+                                    ><span class="page__box-icon--text">${weight} kg</span>
                                 </li>
                                 <li class="page__box-icon">
                                     <i class="fas fa-arrows-alt-v"></i
-                                    ><span class="page__box-icon--text">${
-																			dog.height
-																		}cm</span>
+                                    ><span class="page__box-icon--text">${height} cm</span>
                                 </li>
                                 <li class="page__box-icon">
                                     <i class="fas fa-calendar-check"></i
@@ -117,27 +126,23 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </li>
                                 <li class="page__box-icon">
 									<i class="fas fa-palette"></i
-									><span class="page__box-icon--text">${dog.color[0] ? dog.color[0] : '-'}</span>
+									><span class="page__box-icon--text">${color[0] ? color[0] : '-'}</span>
                                 </li>
                                 <li class="page__box-icon">
 									<i class="fas fa-palette"></i
-									><span class="page__box-icon--text">${dog.color[1] ? dog.color[1] : '-'}</span>
+									><span class="page__box-icon--text">${color[1] ? color[1] : '-'}</span>
                                 </li>
                                 <li class="page__box-icon">
 									<i class="fas fa-palette"></i
-									><span class="page__box-icon--text">${dog.color[2] ? dog.color[2] : '-'}</span>
+									><span class="page__box-icon--text">${color[2] ? color[2] : '-'}</span>
 								</li>
                                 <li class="page__box-icon">
                                     <i class="fas fa-paw"></i
-                                    ><span class="page__box-icon--text">${
-																			dog.coat
-																		}</span>
+                                    ><span class="page__box-icon--text">${coat}</span>
                                 </li>
                                 <li class="page__box-icon">
                                     <i class="fas fa-venus-mars"></i
-                                    ><span class="page__box-icon--text">${
-																			dog.gender
-																		}</span>
+                                    ><span class="page__box-icon--text">${gender}</span>
                                 </li>
                             </ul>
                         </div>
