@@ -4,26 +4,22 @@ document.addEventListener('DOMContentLoaded', function () {
 	const dogsBox = document.getElementById('dogs-box');
 	const catsBox = document.getElementById('cats-box');
 
-	function getAnimalsData() {
-		return new Promise((resolve, reject) => {
-			fetch(animalsUrl)
-				.then((resp) => {
-					if (!resp.ok) {
-						throw Error(`${resp.statusText} - ${resp.url}`);
-					}
-					return resp.json();
-				})
-				.then((data) => resolve(data))
-				.catch((err) => reject(err));
-		});
-	}
+	const localAnimalsJSON = require('./animals.json');
+
+	/* const getAnimalsData = async () => {
+		const response = await fetch(animalsUrl);
+		const data = await response.json();
+
+		return data;
+	}; */
 
 	const dogNumber = document.getElementById('dogNumber');
 	const catNumber = document.getElementById('catNumber');
 
 	async function displayAnimalNumbers() {
-		const dataList = await getAnimalsData();
-		const animalsArray = dataList.animals;
+		/* const dataList = await getAnimalsData(); */
+
+		const animalsArray = localAnimalsJSON.animals;
 
 		let dogsArrayNumber = animalsArray[0].dogs.length;
 		let catsArrayNumber = animalsArray[0].cats.length;
@@ -39,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	async function displayAnimals() {
-		const dataList = await getAnimalsData();
-		const animalsArray = dataList.animals;
+		/* const dataList = await getAnimalsData(); */
+		const animalsArray = localAnimalsJSON.animals;
 
 		animalsArray.forEach((animal) => {
 			dogsArray = animal.dogs;

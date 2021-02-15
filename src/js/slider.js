@@ -1,25 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
 	// carousel
 	const carousel = document.getElementById('carousel');
-	const prevBtn = document.getElementById('prev');
-	const nextBtn = document.getElementById('next');
 	const carouselUrl = './js/carousel.json';
+	const localCarouselJSON = require('./carousel.json');
 
-	let firstSlide;
-	let lastSlide;
-
-	function getSlidesData() {
+	/* function getSlidesData() {
 		return new Promise((resolve, reject) => {
 			fetch(carouselUrl)
 				.then((resp) => resp.json())
 				.then((data) => resolve(data))
 				.catch((err) => reject(err));
 		});
-	}
+	} */
 
 	async function displayCarousel() {
-		const dataList = await getSlidesData();
-		const slidesArray = dataList.slides;
+		/* const dataList = await getSlidesData(); */
+		const slidesArray = localCarouselJSON.slides;
 
 		slidesArray.forEach((slide, slideNumber) => {
 			newSlide = document.createElement('div');
@@ -40,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (slideNumber === 0) {
 				firstSlide = newSlide;
 				newSlide.classList.add('active');
-			} else if (slideNumber + 1 === dataList.slides.length) {
+			} else if (slideNumber + 1 === localCarouselJSON.slides.length) {
 				lastSlide = newSlide;
 			}
 		});
