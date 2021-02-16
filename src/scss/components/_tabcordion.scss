@@ -192,6 +192,10 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		color: rgba($color: $bgClr, $alpha: 1);
+
+		&:focus {
+			color: $secondaryClr;
+		}
 	}
 
 	&__tab {

@@ -36,7 +36,8 @@
 		color: #fff;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: lighten($tertiaryClr, 5%);
 		&::after {
 			opacity: 0.22;
@@ -107,4 +108,8 @@
 	z-index: 5000;
 	opacity: 0;
 	transition: 0.5s ease all;
+
+	&__svg {
+		transform: rotate(-90deg) scale(0.8);
+	}
 }
