@@ -157,6 +157,10 @@
 			}
 		}
 
+		&__image-picture {
+			height: inherit;
+		}
+
 		&__content {
 			display: flex;
 			align-items: center;

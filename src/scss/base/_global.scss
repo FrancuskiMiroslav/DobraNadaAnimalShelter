@@ -1,0 +1,18 @@
+html {
+	font-family: $font-open-sans, $font-roboto, Verdana, Geneva, Tahoma,
+		sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+}

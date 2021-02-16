@@ -18,16 +18,25 @@ document.addEventListener('DOMContentLoaded', function () {
 		const slidesArray = localCarouselJSON.slides;
 
 		slidesArray.forEach((slide, slideNumber) => {
+			const { title, type, content, image, imageTab, imageMob } = slide;
+
 			newSlide = document.createElement('div');
 			newSlide.classList.add('carousel__slide');
 
 			newSlide.innerHTML = `
 						<div class="carousel__image-container">
-							<img src="${slide.image}" alt="slide-img" />
+						<picture class="carousel__image-picture">
+							<source media="(max-width:599px)" srcset="${imageMob}">
+                        	<source media="(min-width:600px)" srcset="${image}">							
+							<img src="${
+								window.innerWidth >= 600 ? image : imageMob
+							}" loading="lazy" alt="${title}"/>
+						</picture>
+							
 						</div>
 						<div class="carousel__content">
-							<h1 class="carousel__title">${slide.title}</h1>
-							<p class="carousel__desc">${slide.content}</p>
+							<h1 class="carousel__title">${title}</h1>
+							<p class="carousel__desc">${content}</p>
 						</div>
 			`;
 

@@ -1,37 +1,36 @@
 {
-    "slides": [
-      {
-        "title": "Slide1 naslov",
-        "type": "",
-        "content": "Slide1 tekst",
-        "image": "./assets/images/carousel/slide1.jpg",
-        "imageTab": "./assets/images/carousel/slide1-tab.jpg",
-		"imageMob": "./assets/images/carousel/slide1-mob.jpg"
-      },
-      {
-        "title": "Slide2 naslov",
-        "type": "",
-        "content": "Slide2 tekst",
-        "image": "./assets/images/carousel/slide2.jpg",
-        "imageTab": "./assets/images/carousel/slide2-tab.jpg",
-        "imageMob": "./assets/images/carousel/slide2-mob.jpg"
-      },
-      {
-        "title": "Slide3 naslov",
-        "type": "",
-        "content": "Slide3 tekst",
-        "image": "./assets/images/carousel/slide3.jpg",
-        "imageTab": "./assets/images/carousel/slide3-tab.jpg",
-        "imageMob": "./assets/images/carousel/slide3-mob.jpg"
-      },
-      {
-        "title": "Slide4 naslov",
-        "type": "",
-        "content": "Slide4 tekst",
-        "image": "./assets/images/carousel/slide4.jpg",
-        "imageTab": "./assets/images/carousel/slide4-tab.jpg",
-        "imageMob": "./assets/images/carousel/slide4-mob.jpg"
-      }
-     
-    ]
-  }
+	"slides": [
+		{
+			"title": "Slide1 naslov",
+			"type": "",
+			"content": "Slide1 tekst",
+			"image": "./assets/images/carousel/slide1.jpg",
+			"imageTab": "./assets/images/carousel/slide1-tab.jpg",
+			"imageMob": "./assets/images/carousel/slide1-mob.jpg"
+		},
+		{
+			"title": "Slide2 naslov",
+			"type": "",
+			"content": "Slide2 tekst",
+			"image": "./assets/images/carousel/slide2.jpg",
+			"imageTab": "./assets/images/carousel/slide2-tab.jpg",
+			"imageMob": "./assets/images/carousel/slide2-mob.jpg"
+		},
+		{
+			"title": "Slide3 naslov",
+			"type": "",
+			"content": "Slide3 tekst",
+			"image": "./assets/images/carousel/slide3.jpg",
+			"imageTab": "./assets/images/carousel/slide3-tab.jpg",
+			"imageMob": "./assets/images/carousel/slide3-mob.jpg"
+		},
+		{
+			"title": "Slide4 naslov",
+			"type": "",
+			"content": "Slide4 tekst",
+			"image": "./assets/images/carousel/slide4.jpg",
+			"imageTab": "./assets/images/carousel/slide4-tab.jpg",
+			"imageMob": "./assets/images/carousel/slide4-mob.jpg"
+		}
+	]
+}

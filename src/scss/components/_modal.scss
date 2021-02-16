@@ -30,6 +30,7 @@
 	animation-name: modalopen;
 	animation-duration: 1s;
 	display: flex;
+	align-items: center;
 
 	@include breakpoint-max(800) {
 		flex-direction: column;
@@ -86,7 +87,7 @@
 		img {
 			height: 100%;
 			width: 100%;
-			object-fit: cover;
+			object-fit: contain;
 			object-position: center;
 		}
 	}
@@ -159,10 +160,22 @@
 	outline: none;
 	box-shadow: -2px 2px 4px 1px rgba(0, 0, 0, 0.6);
 
-	i {
-		border-radius: 100%;
+	svg {
+		left: 10px;
 		position: absolute;
-		left: 12px;
+		transform: scale(0.7);
+		transition: 0.5s linear all;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: rgba($color: $secondaryClr, $alpha: 1);
+		right: -24px;
+		top: -25px;
+
+		svg {
+			transform: scale(1);
+		}
 	}
 }
 
