@@ -129,7 +129,7 @@
 @font-face {
 	font-family: 'Roboto';
 	src: local('Roboto'),
-		url('./assets/fonts/Roboto-RegularItalic.ttf') format('truetype');
+		url('./assets/fonts/Roboto-Italic.ttf') format('truetype');
 	font-weight: 400;
 	font-style: italic;
 }
@@ -200,8 +200,7 @@
 
 @font-face {
 	font-family: 'Lato';
-	src: local('Lato'),
-		url('./assets/fonts/Lato-RegularItalic.ttf') format('truetype');
+	src: local('Lato'), url('./assets/fonts/Lato-Italic.ttf') format('truetype');
 	font-weight: 400;
 	font-style: italic;
 }
