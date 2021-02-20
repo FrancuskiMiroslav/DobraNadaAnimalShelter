@@ -338,12 +338,12 @@
 		&:hover {
 			filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
 
-			i {
+			svg {
 				animation: filter-animation 3s infinite;
 			}
 		}
 
-		i {
+		svg {
 			font-size: 32px;
 			transition: 0.5s ease-in-out all;
 		}
