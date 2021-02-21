@@ -14,15 +14,6 @@
 
 			&__list-item {
 				margin-bottom: 5px;
-
-				::after {
-					font-family: 'Font Awesome 5 Free';
-					content: '\f14a';
-					display: inline-block;
-					position: relative;
-					margin: 5px 10px;
-					color: $primaryClr;
-				}
 			}
 		}
 	}
