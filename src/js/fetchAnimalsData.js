@@ -186,14 +186,12 @@ document.addEventListener('DOMContentLoaded', function () {
     
                                 <div class="expandMoreHolder">
                                     <button
-                                        expand-more
                                         data-hidetext="...Read less"
                                         data-showtext="...Read more"
                                         data-target="showMore-${cat.species}${
 					cat.number
 				}"
-                                        class="button showMore"
-                                    >
+                                        class="button showMore">
                                         ...Read more
                                     </button>
                                 </div>

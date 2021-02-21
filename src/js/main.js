@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	function expand() {
 		const showContent = document.getElementById(this.dataset.target);
 
-		console.log(showContent);
-
 		if (showContent.classList.contains('active')) {
 			this.innerHTML = this.dataset.showtext;
 		} else {
