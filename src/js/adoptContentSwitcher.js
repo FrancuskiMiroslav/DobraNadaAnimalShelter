@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				.querySelector('.adopt__list-item.active')
 				.classList.remove('active');
 
-			tabSwitcher.parentElement.parentElement.classList.add('active');
+			tabSwitcher.parentElement.classList.add('active');
 
 			switchPage(pageId);
 		});

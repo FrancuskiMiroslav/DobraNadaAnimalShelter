@@ -96,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
                                 <div class="expandMoreHolder">
                                     <button
-                                        expand-more
                                         data-hidetext="...Read less"
                                         data-showtext="...Read more"
                                         data-target="showMore-${species}${number}"
