@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 
-	const expandsMore = document.querySelectorAll('[expand-more]');
+	const expandsMore = document.querySelectorAll('.showMore');
 
 	function expand() {
 		const showContent = document.getElementById(this.dataset.target);
