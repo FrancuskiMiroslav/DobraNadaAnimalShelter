@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                     <button
                                         data-hidetext="...Read less"
                                         data-showtext="...Read more"
-                                        data-target="showMore-${species}${number}"
+                                        data-target-animal="showMore-${species}${number}"
                                         class="button showMore"
                                     >
                                         ...Read more
@@ -188,10 +188,11 @@ document.addEventListener('DOMContentLoaded', function () {
                                     <button
                                         data-hidetext="...Read less"
                                         data-showtext="...Read more"
-                                        data-target="showMore-${cat.species}${
-					cat.number
-				}"
-                                        class="button showMore">
+                                        data-target-animal="showMore-${
+																					cat.species
+																				}${cat.number}"
+                                        class="button showMore"
+                                    >
                                         ...Read more
                                     </button>
                                 </div>
@@ -566,10 +567,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			return button;
 		}
 
-		const expandsMore = document.querySelectorAll('[expand-more]');
+		const expandsMoreAnimalInfo = document.querySelectorAll(
+			'[data-target-animal]'
+		);
 
-		function expand() {
-			const showContent = document.getElementById(this.dataset.target);
+		function expandAnimalInfo() {
+			const showContent = document.getElementById(this.dataset.targetAnimal);
+
 			if (showContent.classList.contains('active')) {
 				this.innerHTML = this.dataset.showtext;
 			} else {
@@ -577,6 +581,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 
 			showContent.classList.toggle('active');
+
 			if (showContent.classList.contains('active')) {
 				showContent.style.maxHeight = showContent.scrollHeight + 'px';
 			} else {
@@ -588,8 +593,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			displayPaginatedItems(dogBoxArray, dogsBox, elementsOnPage, currentPage);
 			displayPagination(dogBoxArray, paginationElDogs, elementsOnPage);
 
-			expandsMore.forEach((btn) => {
-				btn.addEventListener('click', expand);
+			expandsMoreAnimalInfo.forEach((btn) => {
+				btn.addEventListener('click', expandAnimalInfo);
 			});
 		}
 
@@ -597,8 +602,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			displayPaginatedItems(catBoxArray, catsBox, elementsOnPage, currentPage);
 			displayPagination(catBoxArray, paginationElCats, elementsOnPage);
 
-			expandsMore.forEach((btn) => {
-				btn.addEventListener('click', expand);
+			expandsMoreAnimalInfo.forEach((btn) => {
+				btn.addEventListener('click', expandAnimalInfo);
 			});
 		}
 	}

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 
-	const expandsMore = document.querySelectorAll('.showMore');
+	const expandsMore = document.querySelectorAll('[data-target]');
 
 	function expand() {
 		const showContent = document.getElementById(this.dataset.target);
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		showContent.classList.toggle('active');
+
 		if (showContent.classList.contains('active')) {
 			showContent.style.maxHeight = showContent.scrollHeight + 'px';
 		} else {
