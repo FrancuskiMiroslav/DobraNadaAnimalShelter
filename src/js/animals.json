@@ -295,7 +295,8 @@
 					"name": "Bongo",
 					"gender": "male",
 					"image": "./assets/images/dogs/bongo.jpg",
-					"desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often"
+					"desc": "He was in a shelter that lacked the resources to continue to care for him, so Beasley came to our shelter to find a new home. He is playful and cheerful dog, who enjoys playing with toys and often",
+					"adopted": "yes"
 				},
 				{
 					"number": 22,
